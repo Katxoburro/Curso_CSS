@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao|Spicy+Rice&display=swap');
+body {
+    background-color: #3c6d3c;
+    font-family: 'Liu Jian Mao Cao', cursive;
+    color: White;
+}
+
+p {
+    font-size: 12pt;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 36pt;
+    font-family: 'Spicy Rice', cursive;
+    text-decoration: underline;
+    text-align: center;
+    background-color: Teal;
+}
+
+td {
+    font-size: 10pt;
+    text-align: center;
+    background-color: 666666;
+}
