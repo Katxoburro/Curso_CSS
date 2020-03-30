@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao|Spicy+Rice&display=swap');
 body {
-    background-color: #3c6d3c;
+    background-color: #ffffff;
     font-family: 'Liu Jian Mao Cao', cursive;
-    color: White;
+    color: rgb(0, 0, 0);
 }
 
 p {
@@ -23,3 +23,55 @@ td {
     text-align: center;
     background-color: 666666;
 }
+
+.shorthand {
+    font-size: 13px;
+    font-weight: bold;
+    margin: 20px 42px 20px 85px;
+    width: 200px;
+    height: 100px;
+    overflow-y: auto;
+}
+
+
+/* width (ancho del palo) */
+
+.shorthand::-webkit-scrollbar {
+    width: 6px;
+}
+
+
+/* (palo) Track */
+
+.shorthand::-webkit-scrollbar-track {
+    border-radius: 6px;
+    background: #9E9E9E;
+    /*     visibility: hidden;
+ */
+}
+
+
+/* manejador */
+
+.shorthand::-webkit-scrollbar-thumb {
+    background: #616161;
+    border-radius: 6px;
+    /* visibility: hidden; */
+}
+
+.shorthand::-webkit-scrollbar-thumb:hover {
+    background: #212121;
+    /*     visibility: hidden;
+ */
+}
+
+
+/* .shorthand:hover::-webkit-scrollbar-track,
+.shorthand:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+}
+
+.shorthand:hover::-webkit-scrollbar {
+    width: 15px;
+    visibility: visible;
+} */
