@@ -3,8 +3,11 @@
     font-size: 25px;
     color: rgb(17, 6, 48);
     font-family: 'Great Vibes', cursive;
-    margin: 23px 43px 0 43px;
+    margin: 34px 43px 99px 43px;
     text-align: justify;
+    background-color: beige;
+    border-radius: 268px;
+    padding: 10px 50px 20px 50px;
 }
 
 .letraCapital {
@@ -21,4 +24,17 @@
     width: 111px;
     float: left;
     margin: -10px 8px -8px 0;
+}
+
+.parrafo:first-line {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.quijote {
+    background: url("../images/quijote.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
