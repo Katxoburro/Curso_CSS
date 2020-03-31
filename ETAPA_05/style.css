@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+.parrafo {
+    font-size: 25px;
+    color: rgb(17, 6, 48);
+    font-family: 'Great Vibes', cursive;
+    margin: 23px 43px 0 43px;
+    text-align: justify;
+}
+
+.letraCapital {
+    font-size: 89px;
+    color: #993333;
+    font-weight: bold;
+    float: left;
+    padding: 29px 19px 0 0;
+    height: 64px;
+    line-height: 70px;
+}
+
+.letraCapitalImagen {
+    width: 111px;
+    float: left;
+    margin: -10px 8px -8px 0;
+}
