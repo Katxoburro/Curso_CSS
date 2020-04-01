@@ -1,16 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-.parrafo {
+
+.boxParrafoImagen {
+    width: 94%;
+    background-color: gray;
+    position: relative;
+    margin: 33px 3% 33px 3%;
+}
+
+.boxParrafoImagen img.quijote {
+    width: 100%;
+    opacity: 0.5;
+}
+
+.boxParrafoImagen .parrafo {
     font-size: 25px;
     color: rgb(17, 6, 48);
     font-family: 'Great Vibes', cursive;
-    margin: 34px 43px 99px 43px;
+    margin: 34px 43px 34px 43px;
     text-align: justify;
-    background-color: beige;
-    border-radius: 268px;
+    background-color: rgba(255, 255, 0, 0.54);
+    border-radius: 115px;
     padding: 10px 50px 20px 50px;
+    position: absolute;
+    top: 0;
 }
 
-.letraCapital {
+.boxParrafoImagen .parrafo:first-line {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.boxParrafoImagen .parrafo .letraCapital {
     font-size: 89px;
     color: #993333;
     font-weight: bold;
@@ -20,21 +40,8 @@
     line-height: 70px;
 }
 
-.letraCapitalImagen {
+.boxParrafoImagen .parrafo .letraCapitalImagen {
     width: 111px;
     float: left;
     margin: -10px 8px -8px 0;
-}
-
-.parrafo:first-line {
-    text-decoration: underline;
-    font-weight: bold;
-}
-
-.quijote {
-    background: url("../images/quijote.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 }
