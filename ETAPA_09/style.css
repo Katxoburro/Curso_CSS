@@ -1,0 +1,13 @@
+h4, p {
+    color: blue;
+}
+
+body, td, p{ 
+    background-color: #000000; 
+    color: #ffffff; 
+}
+
+.inverso{ 
+    background-color: #ffffff; 
+    color: #000000; 
+}
