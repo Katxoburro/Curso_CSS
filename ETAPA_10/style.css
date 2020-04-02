@@ -1,0 +1,24 @@
+ul.listado {
+    display: flex;
+    list-style: none;
+}
+
+ul.listado li {
+    padding: 5px 5px;
+}
+
+ul.listado li:hover {
+    color: deepskyblue;
+    cursor: pointer;
+
+}
+
+.cajaFlotante {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #13efef;
+    z-index: 0;
+    margin: 188px 0 0 233px;
+    padding: 16px 15px;
+}
