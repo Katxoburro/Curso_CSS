@@ -11,3 +11,9 @@ body, td, p{
     background-color: #ffffff; 
     color: #000000; 
 }
+
+#claseUnica {
+    background-color: cadetblue;
+    margin: 25px;
+    
+}
