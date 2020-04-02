@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@515&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@800&display=swap');
+
+.mainBox {
+    position: relative;
+    float: left;
+    width: 800px;
+    height: 300px;
+    background-color: #d9ede2;
+    margin: 50px;
+}
+
+.mainBox .blueBox {
+    background-color: #78c4d3;
+    width: 760px;
+    height: 280px;
+    margin: 20px 20px 0 20px;
+}
+
+.mainBox .blueBox .redBox {
+    padding: 0 7px 0 7px;
+    height: 62px;
+    background-color: #eb2e4a;
+    color: #e3d985;
+    font-family: 'Comfortaa', cursive;
+    float: left;
+    margin: 10px 0 12px 15px;
+    font-size: 38px;
+    width: 412px;
+    text-align: center;
+    line-height: 69px;
+}
+
+.mainBox .blueBox .whiteBox {
+    font-family: 'Anton', sans-serif;
+    font-size: 59px;
+    width: 386px;
+    height: 250px;
+    padding: 0 0 0 27px;
+    color: #ffffff;
+    font-weight: bold;
+    letter-spacing: 5px;
+    line-height: 66px;
+}
+
+.mainBox .blueBox .whiteBox .puntos {
+    font-family: 'Mukta', sans-serif;
+    font-size: 32px;
+    width: 10px;
+    height: 10px;
+    padding: 0px 0 0 27px;
+    color: #ffffff;
+    font-weight: bold;
+    letter-spacing: 5px;
+    line-height: 66px;
+    margin: -39px 0 0 -32px;
+}
+
+.mainBox .blackBox {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 286px;
+    background-color: #191d21d6;
+}
+
+.mainBox .yellowBox {
+    width: 247px;
+    height: 202px;
+    background-color: #eef176c2;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0 23px 0 0;
+    padding: 21px 9px 21px 38px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    font-size: 17px;
+}
