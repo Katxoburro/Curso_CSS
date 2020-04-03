@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+body {
+    font-family: 'Righteous', cursive;
+    margin: 0;
+}
+
+footer {
+    font-size: 10px;
+    text-align: right;
+    background-color: red;
+    color: seashell;
+    padding: 12px 24px 12px 0;
+}
+
+.posicionEstatica1 {
+    position: static;
+    background-color: #ff9;
+    padding: 10px;
+    width: 300px;
+}
+
+.posicionEstatica2 {
+    position: static;
+    background-color: #f9f;
+    padding: 10px;
+    width: 500px;
+}
+
+.posicionEstatica3 {
+    background-color: #9ff;
+    padding: 10px;
+    width: 400px;
+}
+
+.posicioAbsolute1 {
+    position: absolute;
+    width: 300px;
+    height: 140px;
+    top: 100px;
+    left: 30px;
+    background-color: #ff8800;
+    color: #fff;
+    padding: 15px;
+    z-index: 2;
+}
+
+.posicioAbsolute2 {
+    position: absolute;
+    width: 820px;
+    height: 30px;
+    padding: 10px;
+    background-color: #ddf;
+    top: 150px;
+    left: 10px;
+    z-index: 1;
+}
+
+.posicioAbsolute3 {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    padding: 10px;
+    background-color: #ddf;
+    bottom: 10px;
+    right: 10px;
+}
+
+.posicioAbsolute3 {
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    background-color: #ff9966;
+    width: 400px;
+    height: 100px;
+}
+
+.posicioAbsolute3 .uno {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.posicioAbsolute3 .dos {
+    position: absolute;
+    top: 10px;
+    left: 100px;
+}
+
+.posicioAbsolute3 .tres {
+    position: absolute;
+    top: 10px;
+    left: 200px;
+}
+
+.hola {
+    background-color: #606;
+    color: #ffc;
+    padding: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+.posicionRelative1 {
+    position: relative;
+    width: 300px;
+    padding: 10px;
+    background-color: #066;
+    color: #ffc;
+    top: 100px;
+    left: 30px;
+}
+
+.posicionFixed1 {
+    position: fixed;
+    width: 300px;
+    height: 140px;
+    top: 100px;
+    left: 30px;
+    background-color: #ff8800;
+    color: #fff;
+    padding: 15px;
+    z-index: 1;
+}
+
+.posicionFixed2 {
+    position: fixed;
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    background-color: #d0f;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    z-index: 9;
+}
+
+.gato {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    margin: 0 12px 14px 0;
+}
+
+.gato img {
+    width: 100%;
+}
