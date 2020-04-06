@@ -28,10 +28,22 @@ header {
 
 footer {
     font-size: 10px;
-    text-align: right;
     background-color: red;
     color: seashell;
-    padding: 12px 24px 12px 0;
+    padding: 24px 0;
+    text-align: center;
+}
+
+footer a {
+    color: seashell;
+    margin: 0 27px 0 0px;
+    position: absolute;
+    right: 0;
+}
+
+footer a:hover {
+    color: rgb(111, 0, 255);
+    text-decoration: underline
 }
 
 main {
@@ -40,6 +52,7 @@ main {
     margin: 0px auto;
     position: relative;
     margin: 70px auto 20px;
+    display: flow-root;
 }
 
 main .textoPrincipal {
@@ -53,8 +66,10 @@ main .posicionEstatica1 {
     /* padding: 10px; */
     width: calc(50% - 15px - 15px / 2);
     height: 300px;
-    margin: 15px 7.5px 15px 15px;
+    margin: 0 7.5px 15px 15px;
     float: left;
+    box-sizing: border-box;
+    padding: 20px 10px;
 }
 
 main .posicionEstatica2 {
@@ -62,8 +77,10 @@ main .posicionEstatica2 {
     /* padding: 10px; */
     width: calc(50% - 15px - 15px / 2);
     height: 300px;
-    margin: 15px 15px 15px 7.5px;
+    margin: 0 15px 15px 7.5px;
     float: left;
+    box-sizing: border-box;
+    padding: 20px 10px;
 }
 
 main .posicionEstatica3 {
@@ -71,121 +88,48 @@ main .posicionEstatica3 {
     /* padding: 10px; */
     width: calc(100% - 30px);
     float: left;
-    margin: 15px;
+    margin: 0 15px 15px 15px;
     height: 140px;
 }
 
-main .box31 {
-    height: 200px;
-    width: calc(100% / 3 - 15px - 15px/3);
-    background-color: violet;
-    float: left;
-    margin: 15px 0 15px 15px;
-}
-
-main .box32 {
-    height: 200px;
-    width: calc(100% / 3 - 15px - 15px/3);
-    background-color: rgb(130, 150, 238);
-    margin: 15px;
-    float: left;
-}
-
+main .box31,
+main .box32,
 main .box33 {
     height: 200px;
     width: calc(100% / 3 - 15px - 15px/3);
-    background-color: rgb(130, 238, 175);
-    margin: 15px 15px 15px 0;
     float: left;
+    box-sizing: border-box;
+    padding: 20px 10px;
+    border-radius: 20px;
 }
 
+main .box31 {
+    background-color: violet;
+    margin: 0 0 15px 15px;
+}
 
+main .box32 {
+    background-color: rgb(130, 150, 238);
+    margin: 0 15px 15px 15px;
+}
 
+main .box33 {
+    background-color: rgb(130, 238, 175);
+    margin: 0 15px 15px 0;
+}
 
-
-
-
-
-
-.posicioAbsolute1 {
-    position: absolute;
-    width: 300px;
+main .posicionRelative1 {
+    width: calc(100% - 15px * 2);
     height: 140px;
-    top: 100px;
-    left: 30px;
-    background-color: #ff8800;
-    color: #fff;
-    padding: 15px;
-    z-index: 2;
-}
-
-.posicioAbsolute2 {
-    position: absolute;
-    width: 820px;
-    height: 30px;
-    padding: 10px;
-    background-color: #ddf;
-    top: 150px;
-    left: 10px;
-    z-index: 1;
-}
-
-.posicioAbsolute3 {
-    position: absolute;
-    width: 100px;
-    height: 20px;
-    padding: 10px;
-    background-color: #ddf;
-    bottom: 10px;
-    right: 10px;
-}
-
-.posicioAbsolute3 {
-    position: absolute;
-    top: 100px;
-    left: 200px;
-    background-color: #ff9966;
-    width: 400px;
-    height: 100px;
-}
-
-.posicioAbsolute3 .uno {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-}
-
-.posicioAbsolute3 .dos {
-    position: absolute;
-    top: 10px;
-    left: 100px;
-}
-
-.posicioAbsolute3 .tres {
-    position: absolute;
-    top: 10px;
-    left: 200px;
-}
-
-.hola {
-    background-color: #606;
-    color: #ffc;
-    padding: 10px;
-    text-align: center;
-    width: 300px;
-}
-
-.posicionRelative1 {
-    position: relative;
-    width: 300px;
-    padding: 10px;
     background-color: #066;
     color: #ffc;
-    top: 100px;
-    left: 30px;
+    float: left;
+    margin: 0 15px 15px;
+    box-sizing: border-box;
+    padding: 20px 10px;
 }
 
-.gato {
+main .gato {
     position: fixed;
     width: 100px;
     height: 100px;
@@ -195,6 +139,6 @@ main .box33 {
     margin: 0 12px 14px 0;
 }
 
-.gato img {
+main .gato img {
     width: 100%;
 }
