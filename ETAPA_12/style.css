@@ -6,6 +6,26 @@ body {
     margin: 0;
 }
 
+header {
+    position: fixed;
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    background-color: #d0f;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    z-index: 9;
+}
+
 footer {
     font-size: 10px;
     text-align: right;
@@ -14,25 +34,78 @@ footer {
     padding: 12px 24px 12px 0;
 }
 
-.posicionEstatica1 {
-    position: static;
+main {
+    background-color: tomato;
+    width: 900px;
+    margin: 0px auto;
+    position: relative;
+    margin: 70px auto 20px;
+}
+
+main .textoPrincipal {
+    color: #324ccd;
+    padding: 15px;
+    text-align: justify;
+}
+
+main .posicionEstatica1 {
     background-color: #ff9;
-    padding: 10px;
-    width: 300px;
+    /* padding: 10px; */
+    width: calc(50% - 15px - 15px / 2);
+    height: 300px;
+    margin: 15px 7.5px 15px 15px;
+    float: left;
 }
 
-.posicionEstatica2 {
-    position: static;
-    background-color: #f9f;
-    padding: 10px;
-    width: 500px;
+main .posicionEstatica2 {
+    background-color: rgb(255, 153, 192);
+    /* padding: 10px; */
+    width: calc(50% - 15px - 15px / 2);
+    height: 300px;
+    margin: 15px 15px 15px 7.5px;
+    float: left;
 }
 
-.posicionEstatica3 {
+main .posicionEstatica3 {
     background-color: #9ff;
-    padding: 10px;
-    width: 400px;
+    /* padding: 10px; */
+    width: calc(100% - 30px);
+    float: left;
+    margin: 15px;
+    height: 140px;
 }
+
+main .box31 {
+    height: 200px;
+    width: calc(100% / 3 - 15px - 15px/3);
+    background-color: violet;
+    float: left;
+    margin: 15px 0 15px 15px;
+}
+
+main .box32 {
+    height: 200px;
+    width: calc(100% / 3 - 15px - 15px/3);
+    background-color: rgb(130, 150, 238);
+    margin: 15px;
+    float: left;
+}
+
+main .box33 {
+    height: 200px;
+    width: calc(100% / 3 - 15px - 15px/3);
+    background-color: rgb(130, 238, 175);
+    margin: 15px 15px 15px 0;
+    float: left;
+}
+
+
+
+
+
+
+
+
 
 .posicioAbsolute1 {
     position: absolute;
@@ -110,38 +183,6 @@ footer {
     color: #ffc;
     top: 100px;
     left: 30px;
-}
-
-.posicionFixed1 {
-    position: fixed;
-    width: 300px;
-    height: 140px;
-    top: 100px;
-    left: 30px;
-    background-color: #ff8800;
-    color: #fff;
-    padding: 15px;
-    z-index: 1;
-}
-
-.posicionFixed2 {
-    position: fixed;
-    width: 100%;
-    height: 30px;
-    padding: 10px;
-    background-color: #d0f;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    font-size: 18px;
-    color: white;
-    text-align: center;
-    font-weight: bold;
-    line-height: 30px;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-    z-index: 9;
 }
 
 .gato {
