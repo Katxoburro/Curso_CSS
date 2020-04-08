@@ -105,14 +105,31 @@ main {
 
 footer {
     width: 100%;
-    min-height: 426.583px;
     background-color: #000000;
-
 }
 
 footer .inner {
     width: 1024px;
-    height: 68px;
     background-color: thistle;
     margin: 0 auto;
 }
+
+footer .inner .top {}
+footer .inner .top .left {}
+footer .inner .top .left .text {}
+footer .inner .top .left ul {}
+footer .inner .top .left ul li {}
+footer .inner .top .left ul li a {}
+footer .inner .top .left ul li a img {}
+footer .inner .top .right {}
+footer .inner .top .right a {}
+footer .inner .top .right a img {}
+footer .inner .bottom {}
+footer .inner .bottom .left {}
+footer .inner .bottom .left ul {}
+footer .inner .bottom .left ul li {}
+footer .inner .bottom .left ul li a {}
+footer .inner .bottom .left address {}
+footer .inner .bottom .right {}
+footer .inner .bottom .right a {}
+footer .inner .bottom .right a img {}
