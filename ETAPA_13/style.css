@@ -106,14 +106,14 @@ main {
 
 footer {
     width: 100%;
-    background-color: #362e2e;
+    background-color: #000000;
     color: #ffffff;
 }
 
 footer .inner {
     width: 1024px;
-    background-color: #000000;
     margin: 0 auto;
+    padding: 0 0 140px 0;
 }
 
 footer .inner .top {
@@ -128,6 +128,7 @@ footer .inner .top .left {
 
 footer .inner .top .left .text {
     font-size: 12px;
+    padding: 4px 0 0 0;
 }
 
 footer .inner .top .left ul {
@@ -136,6 +137,7 @@ footer .inner .top .left ul {
     list-style-type: none;
     position: relative;
     padding: 0;
+    height: 32px;
 }
 
 footer .inner .top .left ul li {
@@ -144,35 +146,45 @@ footer .inner .top .left ul li {
     padding: 0;
 }
 
-footer .inner .top .left ul li a {}
+footer .inner .top .left ul li a {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
 
 footer .inner .top .left ul li a img {
     width: 100%;
 }
 
-footer .inner .top .left ul li.yt {
-    width: 32px;
-    margin: 0;
+footer .inner .top .left ul li.yt a {
+    width: 31px;
+    margin: -4px 0 0px 0;
 }
 
-footer .inner .top .left ul li.fb {
-    width: 26px;
+footer .inner .top .left ul li.fb a {
+    width: 23px;
+    margin: 0 0 0 50px;
 }
 
-footer .inner .top .left ul li.ig {
-    width: 24px;
+footer .inner .top .left ul li.ig a {
+    width: 27px;
+    margin: -2px 0 0 90px;
 }
 
-footer .inner .top .left ul li.tw {
-    width: 28px;
+footer .inner .top .left ul li.tw a {
+    width: 31px;
+    margin: -5px 0 0 130px;
 }
 
-footer .inner .top .left ul li.in {
-    width: 26px
+footer .inner .top .left ul li.in a {
+    width: 23px;
+    margin: 0px 0 0 177px;
 }
 
-footer .inner .top .left ul li.gd {
-    width: 24px;
+footer .inner .top .left ul li.gd a {
+    width: 22px;
+    margin: 0 0 0 219px;
 }
 
 footer .inner .top .right {
@@ -180,17 +192,17 @@ footer .inner .top .right {
     float: left;
 }
 
-footer .inner .top .right a {}
+footer .inner .top .right a {
+    float: right;
+}
 
 footer .inner .top .right a.appStore {
     width: 125px;
-    float: right;
-    margin: 0 10px 0 0;
+    margin: 0 13px 0 0;
 }
 
 footer .inner .top .right a.googlePlay {
     width: 141px;
-    float: right;
 }
 
 footer .inner .top .right a img {
@@ -199,20 +211,56 @@ footer .inner .top .right a img {
 
 footer .inner .bottom {
     border-top: 1px solid #333;
+    display: flow-root;
+    position: relative;
 }
 
-footer .inner .bottom .left {}
+footer .inner .bottom .left {
+    width: 80%;
+    float: left;
+}
 
-footer .inner .bottom .left ul {}
+footer .inner .bottom .left ul {
+    margin: 0;
+    font-size: 15px;
+    padding: 30px 0 24px 0;
+    list-style-type: none;
+    position: relative;
+}
 
-footer .inner .bottom .left ul li {}
+footer .inner .bottom .left ul li {
+    display: inline-block;
+    margin: 0px 25px 0px 0px;
+    padding: 0;
+}
 
-footer .inner .bottom .left ul li a {}
+footer .inner .bottom .left ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12.5px;
+    font-weight: 900;
+}
 
-footer .inner .bottom .left address {}
+footer .inner .bottom .left address {
+    color: #808080;
+    font-style: inherit;
+    line-height: 21.45px;
+}
 
-footer .inner .bottom .right {}
+footer .inner .bottom .right {
+    width: 20%;
+    float: left;
+}
 
-footer .inner .bottom .right a {}
+footer .inner .bottom .right a {
+    width: 45px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0 0 -2px;
+}
 
-footer .inner .bottom .right a img {}
+footer .inner .bottom .right a img {
+    width: 100%;
+}
