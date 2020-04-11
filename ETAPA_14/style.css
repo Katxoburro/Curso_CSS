@@ -1,0 +1,159 @@
+body {}
+header {
+    width: 240px;
+    background: #f0f8ff;
+}
+header .inner {}
+header .inner .icon {}
+header .inner .icon a {}
+header .inner .icon a img {}
+header .inner .logo {}
+header .inner .logo a {}
+header .inner .logo a img {}    
+/* SECCIÓN DE BODY Y CABECERA.  */
+
+/* SECCIÓN MENÚ GENERAL Y BLOQUE 1 */
+.mainMenu {
+    width: 240px;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.mainMenu .Block1 {}
+.mainMenu .Block1 .linea1 {}
+.mainMenu .Block1 .linea1 .icon {}
+.mainMenu .Block1 .linea1 .icon a {}
+.mainMenu .Block1 .linea1 .icon a img {}
+.mainMenu .Block1 .linea2 {}
+.mainMenu .Block1 .linea2 .icon {}
+.mainMenu .Block1 .linea2 .icon a {}
+.mainMenu .Block1 .linea2 .icon a img {}
+.mainMenu .Block1 .linea3 {}
+.mainMenu .Block1 .linea3 .icon {}
+.mainMenu .Block1 .linea3 .icon a {}
+.mainMenu .Block1 .linea3 .icon a img {}
+/* SECCIÓN MENÚ GENERAL Y BLOQUE 1 */
+
+/* SECCIÓN BLOQUE 2 */
+.mainMenu .Block2 {}
+.mainMenu .Block2 .linea1 {}
+.mainMenu .Block2 .linea1 .icon {}
+.mainMenu .Block2 .linea1 .icon a {}
+.mainMenu .Block2 .linea1 .icon a img {}
+.mainMenu .Block2 {}
+.mainMenu .Block2 .linea2 {}
+.mainMenu .Block2 .linea2 .icon {}
+.mainMenu .Block2 .linea2 .icon a {}
+.mainMenu .Block2 .linea2 .icon a img {}
+.mainMenu .Block2 {}
+.mainMenu .Block2 .linea3 {}
+.mainMenu .Block2 .linea3 .icon {}
+.mainMenu .Block2 .linea3 .icon a {}
+.mainMenu .Block2 .linea3 .icon a img {}
+.mainMenu .Block2 {}
+.mainMenu .Block2 .linea4 {}
+.mainMenu .Block2 .linea4 .icon {}
+.mainMenu .Block2 .linea4 .icon a {}
+.mainMenu .Block2 .linea4 .icon a img {}
+.mainMenu .Block2 {}
+.mainMenu .Block2 .linea5 {}
+.mainMenu .Block2 .linea5 .icon {}
+.mainMenu .Block2 .linea5 .icon a {}
+.mainMenu .Block2 .linea5 .icon a img {}
+.mainMenu .Block2 {}
+.mainMenu .Block2 .linea6 {}
+.mainMenu .Block2 .linea6 .icon {}
+.mainMenu .Block2 .linea6 .icon a {}
+.mainMenu .Block2 .linea6 .icon a img {}
+.mainMenu .Block2 {}
+.mainMenu .Block2 .linea7 {}
+.mainMenu .Block2 .linea7 .icon {}
+.mainMenu .Block2 .linea7 .icon a {}
+.mainMenu .Block2 .linea7 .icon a img {}
+.mainMenu .Block2 {}
+.mainMenu .Block2 .linea8 {}
+.mainMenu .Block2 .linea8 .icon {}
+.mainMenu .Block2 .linea8 .icon a {}
+.mainMenu .Block2 .linea8 .icon a img {}
+.mainMenu .Block2 {}
+.mainMenu .Block2 .linea9 {}
+.mainMenu .Block2 .linea9 .icon {}
+.mainMenu .Block2 .linea9 .icon a {}
+.mainMenu .Block2 .linea9 .icon a img {}
+.mainMenu .Block2 {}
+.mainMenu .Block2 .linea10 {}
+.mainMenu .Block2 .linea10 .icon {}
+.mainMenu .Block2 .linea10 .icon a {}
+.mainMenu .Block2 .linea10 .icon a img {}
+/* FIN BLOQUE 2 */
+/* SECCIÓN BLOQUE 3 */
+.mainMenu .Block3 .titulo {}
+.mainMenu .Block3 {}
+.mainMenu .Block3 .linea1 {}
+.mainMenu .Block3 .linea1 .icon {}
+.mainMenu .Block3 .linea1 .icon a {}
+.mainMenu .Block3 .linea1 .icon a img {}
+.mainMenu .Block3 {}
+.mainMenu .Block3 .linea2 {}
+.mainMenu .Block3 .linea2 .icon {}
+.mainMenu .Block3 .linea2 .icon a {}
+.mainMenu .Block3 .linea2 .icon a img {}
+.mainMenu .Block3 {}
+/* FIN BLOQUE 3 */
+/* SECCIÓN BLOQUE 4 */
+.mainMenu .Block4 .titulo {}
+.mainMenu .Block4 {}
+.mainMenu .Block4 .linea1 {}
+.mainMenu .Block4 .linea1 .icon {}
+.mainMenu .Block4 .linea1 .icon a {}
+.mainMenu .Block4 .linea1 .icon a img {}
+.mainMenu .Block4 {}
+.mainMenu .Block4 .linea2 {}
+.mainMenu .Block4 .linea2 .icon {}
+.mainMenu .Block4 .linea2 .icon a {}
+.mainMenu .Block4 .linea2 .icon a img {}
+.mainMenu .Block4 {}
+.mainMenu .Block4 .linea3 {}
+.mainMenu .Block4 .linea3 .icon {}
+.mainMenu .Block4 .linea3 .icon a {}
+.mainMenu .Block4 .linea3 .icon a img {}
+.mainMenu .Block4 {}
+.mainMenu .Block4 .linea4 {}
+.mainMenu .Block4 .linea4 .icon {}
+.mainMenu .Block4 .linea4 .icon a {}
+.mainMenu .Block4 .linea4 .icon a img {}
+.mainMenu .Block4 {}
+.mainMenu .Block4 .linea5 {}
+.mainMenu .Block4 .linea5 .icon {}
+.mainMenu .Block4 .linea5 .icon a {}
+.mainMenu .Block4 .linea5 .icon a img {}
+/* FIN BLOQUE 4 */
+/* SECCIÓN BLOQUE 5 */
+.mainMenu .Block5 {}
+.mainMenu .Block5 .linea1 {}
+.mainMenu .Block5 .linea1 .icon {}
+.mainMenu .Block5 .linea1 .icon a {}
+.mainMenu .Block5 .linea1 .icon a img {}
+.mainMenu .Block5 {}
+.mainMenu .Block5 .linea2 {}
+.mainMenu .Block5 .linea2 .icon {}
+.mainMenu .Block5 .linea2 .icon a {}
+.mainMenu .Block5 .linea2 .icon a img {}
+.mainMenu .Block5 {}
+.mainMenu .Block5 .linea3 {}
+.mainMenu .Block5 .linea3 .icon {}
+.mainMenu .Block5 .linea3 .icon a {}
+.mainMenu .Block5 .linea3 .icon a img {}
+.mainMenu .Block5 {}
+.mainMenu .Block5 .linea4 {}
+.mainMenu .Block5 .linea4 .icon {}
+.mainMenu .Block5 .linea4 .icon a {}
+.mainMenu .Block5 .linea4 .icon a img {}
+/* FIN BLOQUE 5 */
+/* SECCIÓN BLOQUE 6 */
+.mainMenu .Block6 {}
+.mainMenu .Block6 .linea1 {}
+.mainMenu .Block6 .linea1 a {}
+.mainMenu .Block6 .linea2 {}
+.mainMenu .Block6 .linea2 a {}
+.mainMenu .Block6 .linea3 {}
