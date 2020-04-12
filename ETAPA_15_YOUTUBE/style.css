@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    background-color: #5f9ea0;
+    margin: 0;
+}
+
+nav {
+    width: 240px;
+    height: 100%;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav .header {
+    width: 100%;
+    height: 56px;
+    background-color: #e6e6fa;
+    position: relative;
+    border-bottom: 1px solid #efefef;
+}
+
+nav .header .icon {
+    width: 24px;
+    height: 24px;
+    background-color: #808080;
+    margin: 16px 24px 0 24px;
+    float: left;
+}
+
+nav .header .logo {
+    width: 80px;
+    height: 24px;
+    background-color: #f0f8ff;
+    margin: 16px 0 0;
+    float: left;
+}
+
+nav .header .countryCode {
+    width: 12px;
+    height: 12px;
+    background-color: #6bace5;
+    float: left;
+    margin: 16px 0 0;
+}
+
+nav .inner {
+    width: 100%;
+    height: calc(100% - 56px - 1px);
+    overflow-y: overlay;
+    overflow-x: hidden;
+}
+
+/* CONTENEDOR GENERAL */
+nav .inner::-webkit-scrollbar {
+    width: 0;
+    visibility: hidden;
+}
+
+/* PALO O FONDO DESLIZABLE */
+nav .inner::-webkit-scrollbar-track {
+    background-color: transparent;
+    visibility: hidden;
+}
+
+/* MANEJADOR DENTRO DEL PALO */
+nav .inner::-webkit-scrollbar-thumb {
+    background: #cfcfcf;
+    visibility: hidden;
+}
+
+nav .inner:hover::-webkit-scrollbar-track,
+nav .inner:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+}
+
+nav .inner:hover::-webkit-scrollbar {
+    width: 8px;
+    visibility: visible;
+}
+
+nav .inner .block {
+    width: 100%;
+    padding: 12px 0;
+    background-color: #ffe4c4;
+    border-bottom: 1px solid #efefef;
+}
+
+nav .inner .block .line {
+    width: 100%;
+    height: 40px;
+    background-color: #f0f8ff;
+    padding: 0 24px;
+    box-sizing: border-box;
+    /* padding hacia dentro */
+}
+
+nav .inner .block .line .icon {
+    width: 24px;
+    height: 24px;
+    background-color: #7fffd4;
+    float: left;
+    margin: 8px 24px 0 0;
+}
+
+nav .inner .block .line .text {
+    width: calc(100% - 24px - 24px);
+    height: 24px;
+    background-color: #69b29a;
+    float: left;
+    margin: 8px 0 0 0;
+}
+
+nav .inner .footer {
+    padding: 16px 24px;
+}
+
+nav .inner .footer ul {
+    font-size: 13px;
+    font-weight: 500;
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 12px 0;
+    display: flow-root;
+}
+
+nav .inner .footer ul li {
+    height: 18px;
+    line-height: 18px;
+    margin: 0 8px 0 0;
+    padding: 0;
+    float: left;
+}
+
+nav .inner .footer ul li a {
+    text-decoration: none;
+    color: #606060;
+}
+
+nav .inner .footer .copyright {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #909090;
+    padding: 20px 0 0 0;
+}
