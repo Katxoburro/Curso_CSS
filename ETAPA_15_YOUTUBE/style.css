@@ -20,7 +20,6 @@ nav {
 nav .header {
     width: 100%;
     height: 56px;
-    background-color: #e6e6fa;
     position: relative;
     border-bottom: 1px solid #efefef;
 }
@@ -28,25 +27,31 @@ nav .header {
 nav .header .icon {
     width: 24px;
     height: 24px;
-    background-color: #808080;
     margin: 16px 24px 0 24px;
     float: left;
+}
+
+nav .header .icon img {
+    width: 100%;
 }
 
 nav .header .logo {
     width: 80px;
     height: 24px;
-    background-color: #f0f8ff;
     margin: 16px 0 0;
     float: left;
+}
+
+nav .header .logo img {
+    width: 100%;
 }
 
 nav .header .countryCode {
     width: 12px;
     height: 12px;
-    background-color: #6bace5;
     float: left;
-    margin: 16px 0 0;
+    margin: 16px 0 0 2px;
+    color: #606060;
 }
 
 nav .inner {
@@ -89,6 +94,15 @@ nav .inner .block {
     padding: 12px 0;
     background-color: #ffe4c4;
     border-bottom: 1px solid #efefef;
+}
+
+nav .inner .block .title {
+    background-color: #7fffd4;
+    font-size: 14px;
+    font-weight: 500;
+    color: #606060;
+    text-transform: uppercase;
+    padding: 8px 24px;
 }
 
 nav .inner .block .line {
