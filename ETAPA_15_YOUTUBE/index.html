@@ -25,42 +25,48 @@
 
         <div class="inner">
             <div class="block">
-                <div class="line">
-                    <div class="icon">
-                        <img src="../images/icons/youtube/paginaPrincipal.png">
+                <a href="https://www.youtube.com/">
+                    <div class="line">
+                        <div class="icon">
+                            <img src="../images/icons/youtube/paginaPrincipal.png">
+                        </div>
+                        <div class="text">Página principal</div>
                     </div>
-                    <div class="text">Página principal</div>
-                </div>
+                </a>
 
-                <div class="line">
-                    <div class="icon">
-                        <img src="../images/icons/youtube/tendencias.png">
+                <a href="https://www.youtube.com/feed/trending">
+                    <div class="line">
+                        <div class="icon">
+                            <img src="../images/icons/youtube/tendencias.png">
+                        </div>
+                        <div class="text">Tendencias</div>
                     </div>
-                    <div class="text">Tendencias</div>
-                </div>
+                </a>
 
-                <div class="line">
-                    <div class="icon">
-                        <img src="../images/icons/youtube/subscription.png">
+                <a href="https://www.youtube.com/feed/subscriptions">
+                    <div class="line">
+                        <div class="icon">
+                            <img src="../images/icons/youtube/subscription.png">
+                        </div>
+                        <div class="text">Suscripciones</div>
                     </div>
-                    <div class="text">Suscripciones</div>
-                </div>
+                </a>
             </div>
 
             <div class="block">
-                <div class="line">
+                <a href="https://www.youtube.com/feed/library" class="line">
                     <div class="icon">
                         <img src="../images/icons/youtube/biblioteca.png">
                     </div>
                     <div class="text">Biblioteca</div>
-                </div>
+                </a>
 
-                <div class="line">
+                <a href="https://www.youtube.com/feed/history" class="line">
                     <div class="icon">
                         <img src="../images/icons/youtube/history.png">
                     </div>
                     <div class="text">Historial</div>
-                </div>
+                </a>
 
                 <div class="line">
                     <div class="icon">
@@ -83,12 +89,49 @@
                     <div class="text">Reproducción actual</div>
                 </div>
 
-                <div class="line">
+                <a class="line" id="buttonShowBox" onclick="document.getElementById('hiddenBox').style.display='block'; document.getElementById('buttonShowBox').style.display='none';">
                     <div class="icon">
                         <img src="../images/icons/youtube/mostrarMas.png">
                     </div>
                     <div class="text">Mostrar más</div>
-                </div>
+                </a>
+
+                <span id="hiddenBox">
+                    <div class="line">
+                        <div class="icon">
+                            <img src="../images/icons/youtube/videosQueMeGustan.png">
+                        </div>
+                        <div class="text">Vídeos que me gustan</div>
+                    </div>
+
+                    <div class="line">
+                        <div class="icon">
+                            <img src="../images/icons/youtube/playlist-play.png">
+                        </div>
+                        <div class="text">Rock</div>
+                    </div>
+
+                    <div class="line">
+                        <div class="icon">
+                            <img src="../images/icons/youtube/playlist-play.png">
+                        </div>
+                        <div class="text">SIESTEANDO</div>
+                    </div>
+
+                    <div class="line">
+                        <div class="icon">
+                            <img src="../images/icons/youtube/playlist-play.png">
+                        </div>
+                        <div class="text">REGGAE</div>
+                    </div>
+
+                    <a class="line" onclick="document.getElementById('hiddenBox').style.display='none';  document.getElementById('buttonShowBox').style.display='block';">
+                        <div class="icon">
+                            <img src="../images/icons/youtube/mostrarMenos.png">
+                        </div>
+                        <div class="text">Mostrar menos</div>
+                    </a>
+                </span>
             </div>
 
             <div class="block">
@@ -130,7 +173,7 @@
                     <div class="icon">
                         <img src="../images/icons/youtube/videojuegos.png">
                     </div>
-                    
+
                     <div class="text">Videojuegos</div>
                 </div>
 
@@ -161,7 +204,7 @@
                     <div class="icon">
                         <img src="../images/icons/youtube/historialDeDenuncias.png"">
                     </div>
-                    <div class="text">Historial de denuncias</div>
+                    <div class=" text">Historial de denuncias</div>
                 </div>
 
                 <div class="line">
