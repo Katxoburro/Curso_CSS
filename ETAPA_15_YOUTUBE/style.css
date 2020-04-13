@@ -110,8 +110,7 @@ nav .inner .block .line {
     height: 40px;
     background-color: #f0f8ff;
     padding: 0 24px;
-    box-sizing: border-box;
-    /* padding hacia dentro */
+    box-sizing: border-box; /* padding hacia dentro */
 }
 
 nav .inner .block .line .icon {
@@ -122,12 +121,27 @@ nav .inner .block .line .icon {
     margin: 8px 24px 0 0;
 }
 
+nav .inner .block .line .icon.avatar {
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+nav .inner .block .line .icon img {
+    width: 100%;
+}
+
 nav .inner .block .line .text {
     width: calc(100% - 24px - 24px);
-    height: 24px;
     background-color: #69b29a;
     float: left;
     margin: 8px 0 0 0;
+    font-size: 14px;
+    font-weight: 400;
+    height: 20.6667px;
+    line-height: 21px;
+    white-space: nowrap; /* Para truncar texto */
+    overflow: hidden; /* Delimita la caja */
+    text-overflow: ellipsis; /* Añade puntos suspensivos */
 }
 
 nav .inner .footer {
