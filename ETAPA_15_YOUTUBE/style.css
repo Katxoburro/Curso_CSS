@@ -6,6 +6,77 @@ body {
     font-size: 10px;
     background-color: #5f9ea0;
     margin: 0;
+    overflow-y: scroll;
+    /* FORZAMOS SCROLL DERECHO */
+}
+
+header {
+    background-color: bisque;
+    width: 100%;
+    height: 56px;
+    position: fixed;
+    display: flow-root;
+}
+
+header .left {
+    background-color: coral;
+    width: 240px;
+    height: 100%;
+    float: left;
+}
+
+header .left .icon {
+    width: 24px;
+    height: 24px;
+    margin: 16px 24px 0 24px;
+    float: left;
+}
+
+header .left .icon img {
+    width: 100%;
+}
+
+header .left .logo {
+    width: 80px;
+    height: 24px;
+    margin: 16px 0 0;
+    float: left;
+    }
+
+header .left .logo img {
+    width: 100%;
+}
+
+header .left .countryCode {
+    width: 12px;
+    height: 12px;
+    float: left;
+    margin: 16px 0 0 2px;
+}
+
+header .left .countryCode img {
+    width: 100%;
+}
+
+.header .left .countryCode {
+    width: 12px;
+    height: 12px;
+    float: left;
+    margin: 16px 0 0 2px;
+}
+
+header .center {
+    background-color: cyan;
+    float: left;
+    width: calc(100% - 240px - 220px);
+    height: 100%;
+}
+
+header .right {
+    background-color: deepskyblue;
+    width: 220x;
+    height: 100%;
+    float: left;
 }
 
 nav {
@@ -15,6 +86,7 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
+    display: none;
 }
 
 nav .header {
@@ -96,7 +168,8 @@ nav .inner .block {
 
 nav .inner .block:nth-child(1),
 nav .inner .block:nth-child(2) {
-    padding: 12px 0; /* SOLO AFECTA A LOS BLOQUES 1º Y 2º */
+    padding: 12px 0;
+    /* SOLO AFECTA A LOS BLOQUES 1º Y 2º */
 }
 
 nav .inner .block:nth-child(5) {
@@ -137,7 +210,8 @@ nav .inner .block .line .icon {
     margin: 8px 24px 0 0;
 }
 
-nav .inner .block .line .icon.avatar { /* dos clases en la misma etiqueta */
+nav .inner .block .line .icon.avatar {
+    /* dos clases en la misma etiqueta */
     border-radius: 24px;
     overflow: hidden;
 }
