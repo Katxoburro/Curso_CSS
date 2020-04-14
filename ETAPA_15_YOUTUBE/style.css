@@ -90,8 +90,17 @@ nav .inner:hover::-webkit-scrollbar {
 
 nav .inner .block {
     width: 100%;
-    padding: 12px 0;
+    padding: 12px 0 8px;
     border-bottom: 1px solid #efefef;
+}
+
+nav .inner .block:nth-child(1),
+nav .inner .block:nth-child(2) {
+    padding: 12px 0; /* SOLO AFECTA A LOS BLOQUES 1º Y 2º */
+}
+
+nav .inner .block:nth-child(5) {
+    padding: 8px 0;
 }
 
 nav .inner .block .title {
@@ -99,7 +108,7 @@ nav .inner .block .title {
     font-weight: 500;
     color: #606060;
     text-transform: uppercase;
-    padding: 8px 24px;
+    padding: 4px 24px 8px;
 }
 
 nav .inner .block .line {
@@ -128,7 +137,7 @@ nav .inner .block .line .icon {
     margin: 8px 24px 0 0;
 }
 
-nav .inner .block .line .icon.avatar {
+nav .inner .block .line .icon.avatar { /* dos clases en la misma etiqueta */
     border-radius: 24px;
     overflow: hidden;
 }
