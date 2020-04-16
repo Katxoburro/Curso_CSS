@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap');
 
 body {
-    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 10px;
     background-color: #5f9ea0;
     margin: 0;
-    overflow-y: scroll;
     /* FORZAMOS SCROLL DERECHO */
+    overflow-y: scroll;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
 }
 
 .icon {
@@ -20,25 +23,26 @@ img {
 }
 
 header {
-    background-color: bisque;
     width: 100%;
     height: 56px;
+    background-color: #ffffff;
     position: fixed;
     top: 0;
     left: 0;
     display: flow-root;
+    z-index: 1;
 }
 
 header .left {
-    background-color: coral;
-    width: 240px;
+    width: calc(100% - 220px);
     height: 100%;
     float: left;
 }
 
-header .left .icon {
+header .left .menu {
     margin: 16px 24px 0 24px;
     float: left;
+    cursor: pointer;
 }
 
 header .left .logo {
@@ -55,45 +59,36 @@ header .left .countryCode {
     margin: 16px 0 0 2px;
 }
 
-.header .left .countryCode {
-    width: 12px;
-    height: 12px;
+header .left .search {
     float: left;
-    margin: 16px 0 0 2px;
-}
-
-header .center {
-    background-color: cyan;
-    float: left;
-    width: calc(100% - 240px - 220px);
+    width: calc(100% - 240px);
     height: 100%;
 }
 
-header .center form {
-    width: 640px;
+header .left .search form {
+    width: 100%;
     height: 32px;
-    margin: 12px 51px;
-    float: left;
-    background-color: rgb(32, 238, 111);
+    margin: 12px 0 0 13px;
+    box-sizing: border-box;
+    padding: 0 0 0 61px;
 }
 
-header .center form input {
+header .left .search form input {
     box-sizing: border-box;
     width: calc(100% - 65px);
     height: 32px;
     margin: 0;
-    padding: 0;
     border: 1px solid #d3d3d3;
     background-color: #ffffff;
     border-radius: 2px 0 0 2px;
     border-right: 0;
-    padding: 2px 10px;
+    padding: 2px 11px;
     font-size: 16px;
     outline: none;
     box-shadow: #eeeeee 0px 1px 2px 0px inset;
 }
 
-header .center form button {
+header .left .search form button {
     width: 65px;
     height: 32px;
     float: right;
@@ -103,17 +98,18 @@ header .center form button {
     cursor: pointer;
 }
 
-header .center form button:hover {
+header .left .search form button:hover {
     border-color: #c6c6c6;
     background-color: #f0f0f0;
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.10); /* COPIADO LITERALMENTE */
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.10);
+    /* COPIADO LITERALMENTE */
 }
 
-header .center form button:hover .icon {
+header .left .search form button:hover .icon {
     opacity: 1;
 }
 
-header .center form button .icon {
+header .left .search form button .icon {
     margin: 0 auto;
     /* centrar dendtro de su contenedor */
     width: 20px;
@@ -122,14 +118,12 @@ header .center form button .icon {
 }
 
 header .right {
-    background-color: #00bfff;
     width: 220px;
     height: 100%;
     float: left;
 }
 
 header .right .icon {
-    background-color: #0000ff;
     float: right;
     margin: 16px 24px 0 0;
 }
@@ -138,9 +132,20 @@ header .right .avatar {
     width: 32px;
     height: 32px;
     float: right;
-    background-color: #bbff00;
-    margin: 12px 28px 0 8px;
+    margin: 12px 30px 0 6px;
     border-radius: 50%;
+    overflow: hidden;
+}
+
+.navHiddenBox {
+    background-color:rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
 }
 
 nav {
@@ -151,6 +156,7 @@ nav {
     top: 0;
     left: 0;
     display: none;
+    z-index: 3;
 }
 
 nav .header {
@@ -163,6 +169,7 @@ nav .header {
 nav .header .icon {
     margin: 16px 24px 0 24px;
     float: left;
+    cursor: pointer;
 }
 
 nav .header .logo {

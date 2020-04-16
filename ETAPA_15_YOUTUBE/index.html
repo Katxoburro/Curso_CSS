@@ -12,37 +12,63 @@
 <body>
     <header>
         <div class="left">
-            <div class="icon">
+            <!-- Este es un botón que en el ONCLICK ejecuta sobre el NAV, lo muestra. -->
+            <div class="icon menu" onclick="
+                document.getElementById('nav').style.display='block';
+                document.getElementById('navHiddenBox').style.display='block';
+                document.getElementsByTagName('body')[0].style.overflow='hidden';
+            ">
                 <img src="../images/icons/youtube/menu.png">
             </div>
-            <div class="logo">
-                <img src="../images/icons/youtube/logo.png">
-            </div>
-            <div class="countryCode">ES</div>
-        </div>
 
-        <div class="center">
-            <form>
-                <input type="text">
-                <button>
-                    <div class="icon">
-                        <img src="../images/icons/youtube/buscar.png">
-                    </div>
-                </button>
-            </form>
+            <a href="https://www.youtube.com/" class="logo">
+                <img src="../images/icons/youtube/logo.png">
+            </a>
+
+            <div class="countryCode">ES</div>
+
+            <div class="search">
+                <form>
+                    <input type="text" placeholder="Buscar">
+                    <button>
+                        <div class="icon">
+                            <img src="../images/icons/youtube/buscar.png">
+                        </div>
+                    </button>
+                </form>
+            </div>
         </div>
 
         <div class="right">
-            <div class="avatar"></div>
-            <div class="icon"></div>
-            <div class="icon"></div>
-            <div class="icon"></div>
+            <div class="avatar">
+                <img src="../images/icons/youtube/soriano.jpg">
+            </div>
+            <div class="icon">
+                <img src="../images/icons/youtube/notificaciones.png">
+            </div>
+            <div class="icon">
+                <img src="../images/icons/youtube/aplicaciones.png">
+            </div>
+            <div class="icon">
+                <img src="../images/icons/youtube/creaarVideos.png">
+            </div>
         </div>
     </header>
 
-    <nav>
+    <!-- CAPA OCULTA QUE APARECE AL LLAMAR AL NAV -->
+    <div class="navHiddenBox" id="navHiddenBox" onclick="
+        document.getElementById('nav').style.display='none';
+        document.getElementById('navHiddenBox').style.display='none';
+        document.getElementsByTagName('body')[0].style.overflowY='scroll';
+    "></div>
+
+    <nav id="nav">
         <div class="header">
-            <div class="icon">
+            <div class="icon" onclick="
+                document.getElementById('nav').style.display='none';
+                document.getElementById('navHiddenBox').style.display='none';
+                document.getElementsByTagName('body')[0].style.overflowY='scroll';
+            ">
                 <img src="../images/icons/youtube/menu.png">
             </div>
             <div class="logo">
