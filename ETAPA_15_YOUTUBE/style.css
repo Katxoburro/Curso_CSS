@@ -323,31 +323,32 @@ nav .inner .footer .copyright {
     padding: 20px 0 0 0;
 }
 
-.profileUser {
+.profileUserBox {
     width: 300px;
-    height: 100%;
     background-color: #800808;
     position: fixed;
-    margin: 0px 0 0 740px;
+    margin: 8px 76px 0 0;
     display: flow-root;
     z-index: 3;
+    top: 0;
+    right: 0;
 }
 
-.profileUser .header {
+.profileUserBox .header {
     width: 300px;
     height: 102px;
     float: left;
     background-color: #40e0d0;
 }
 
-.profileUser .header .left {
+.profileUserBox .header .left {
     width: calc(100% - 75%);
     height: 102px;
     float: left;
     background-color: #9acd32;
 }
 
-.profileUser .header .left .avatar {
+.profileUserBox .header .left .avatar {
     width: 40px;
     height: 40px;
     float: left;
@@ -356,25 +357,109 @@ nav .inner .footer .copyright {
     background-color: #d8bfd8;
 }
 
-.profileUser .header .right {
+.profileUserBox .header .right {
     width: calc(100% - 25%);
     height: 102px;
     float: left;
     background-color: #ee82ee;
 }
 
-.profileUser .header .right .userData {
+.profileUserBox .header .right {
     width: 184px;
     height: 70px;
     float: left;
     background-color: #adff2f;
-    margin: 12px 0px 0px 17px;
-    padding: 10px 0 0 0px;
+    margin: 6px 0px 0px 17px;
 }
 
-.profileUser .header .right .userData .text {
+.profileUserBox .header .right .text {
     width: 184px;
     height: 21px;
     float: left;
-    background-color: darkgray;
+    background-color: #a9a9a9;
+    margin: 6px 0 0 0;
 }
+
+.profileUserBox .header .right a {
+    width: 184px;
+    height: 21px;
+    float: left;
+    margin: 15px 0 0 0;
+    background-color: #a9a9a9;
+}
+
+.profileUserBox .inner {
+    width: 100%;
+    height: calc(100% - 102px - 1px);
+    overflow-y: overlay;
+    overflow-x: hidden;
+    background-color: #f0e68c;
+    max-height: calc(450px - 102px - 8px);
+}
+
+/* CONTENEDOR GENERAL */
+.profileUserBox .inner::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* PALO O FONDO DESLIZABLE */
+.profileUserBox .inner::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+/* MANEJADOR DENTRO DEL PALO */
+.profileUserBox .inner::-webkit-scrollbar-thumb {
+    background: #cfcfcf;
+}
+
+.profileUserBox .inner .block {
+    width: 100%;
+    padding: 12px 0 8px;
+    border-bottom: 1px solid #efefef;
+    background-color: #808000;
+}
+
+.profileUserBox .inner .block .line {
+    width: 100%;
+    height: 40px;
+    color: #030303;
+    padding: 8px 24px;
+    box-sizing: border-box;
+    display: block;
+    cursor: pointer;
+    background-color: #2f5fff;
+}
+
+.profileUserBox .inner .block .line:hover {
+    background-color: #f2f2f2;
+}
+
+.profileUserBox .inner .block .line .icon {
+    background-color: #adff2f;
+    float: left;
+}
+
+.profileUserBox .inner .block .line .text {
+    width: calc(100% - 24px*2);
+    height: 24px;
+    background-color: #ff2f2f;
+    float: left;
+    padding: 0 0 0 24px;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color:#030303;
+}
+
+.profileUserBox .footer {
+    width: 100%;
+    height: 40px;
+    color: #030303;
+    padding: 8px 24px;
+    box-sizing: border-box;
+    display: block;
+    cursor: pointer;
+    background-color: #2f5fff;
+}
+
