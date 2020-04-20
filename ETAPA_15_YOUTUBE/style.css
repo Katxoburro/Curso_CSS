@@ -390,11 +390,10 @@ nav .inner .footer .copyright {
 
 .profileUserBox .inner {
     width: 100%;
-    height: calc(100% - 102px - 1px);
+    max-height: calc(100vh - 102px - 8px);
     overflow-y: overlay;
     overflow-x: hidden;
     background-color: #f0e68c;
-    max-height: calc(450px - 102px - 8px);
 }
 
 /* CONTENEDOR GENERAL */
@@ -414,7 +413,7 @@ nav .inner .footer .copyright {
 
 .profileUserBox .inner .block {
     width: 100%;
-    padding: 12px 0 8px;
+    padding: 8px 0;
     border-bottom: 1px solid #efefef;
     background-color: #808000;
 }
@@ -423,7 +422,7 @@ nav .inner .footer .copyright {
     width: 100%;
     height: 40px;
     color: #030303;
-    padding: 8px 24px;
+    padding: 8px 16px;
     box-sizing: border-box;
     display: block;
     cursor: pointer;
@@ -449,17 +448,41 @@ nav .inner .footer .copyright {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
-    color:#030303;
+    color: #030303;
 }
 
 .profileUserBox .footer {
     width: 100%;
-    height: 40px;
-    color: #030303;
-    padding: 8px 24px;
+    padding: 8px 16px;
     box-sizing: border-box;
-    display: block;
     cursor: pointer;
-    background-color: #2f5fff;
+    background-color: #22fbff;
+    display: flow-root;
+    margin: 8px 0;
 }
 
+.profileUserBox .footer:hover {
+    background-color: #f2f2f2;
+}
+
+.profileUserBox .footer .text {
+    font-size: 14px;
+    font-weight: 400;
+    color: #030303;
+    height: 24px;
+    line-height: 24px;
+    background-color: antiquewhite;
+    width: calc(100% - 24px);
+    float: left;
+}
+
+.profileUserBox .footer .icon {
+    background-color: cadetblue;
+    float: left;
+}
+
+@media (min-height: 759px) {
+    .profileUserBox {
+        margin: 48px 16px 0 0;
+    }
+}
