@@ -15,7 +15,7 @@
             <!-- Este es un botón que en el ONCLICK ejecuta sobre el NAV, lo muestra. -->
             <div class="icon menu" onclick="
                 document.getElementById('nav').style.display='block';
-                document.getElementById('navHiddenBox').style.display='block';
+                document.getElementById('navHidden').style.display='block';
                 document.getElementsByTagName('body')[0].style.overflow='hidden';
             ">
                 <img src="../images/icons/youtube/menu.png">
@@ -40,7 +40,10 @@
         </div>
 
         <div class="right">
-            <div class="avatar">
+            <div class="avatar" onclick="
+                document.getElementById('profileUserBox').style.display='flow-root';
+                document.getElementById('profileUserBoxHidden').style.display='block';
+            ">
                 <img src="../images/icons/youtube/soriano.jpg">
             </div>
             <div class="icon">
@@ -55,10 +58,10 @@
         </div>
     </header>
 
-    <!-- CAPA OCULTA QUE APARECE AL LLAMAR AL NAV -->
-    <div class="navHiddenBox" id="navHiddenBox" onclick="
+    <!-- CAPAS OCULTAS QUE APARECE AL LLAMAR AL NAV Y profileUserBox.. -->
+    <div class="navHidden" id="navHidden" onclick="
         document.getElementById('nav').style.display='none';
-        document.getElementById('navHiddenBox').style.display='none';
+        document.getElementById('navHidden').style.display='none';
         document.getElementsByTagName('body')[0].style.overflowY='scroll';
     "></div>
 
@@ -66,7 +69,7 @@
         <div class="header">
             <div class="icon" onclick="
                 document.getElementById('nav').style.display='none';
-                document.getElementById('navHiddenBox').style.display='none';
+                document.getElementById('navHidden').style.display='none';
                 document.getElementsByTagName('body')[0].style.overflowY='scroll';
             ">
                 <img src="../images/icons/youtube/menu.png">
@@ -331,62 +334,64 @@
         </div>
     </nav>
 
+    <div class="profileUserBoxHidden" id="profileUserBoxHidden" onclick="
+        document.getElementById('profileUserBox').style.display='none';
+        document.getElementById('profileUserBoxHidden').style.display='none';
+    "></div>
 
-
-    <!-- -------------------------------------------- -->
-
-    <div class="profileUserBox">
+    <div class="profileUserBox" id="profileUserBox">
         <div class="header">
             <div class="left">
                 <div class="avatar">
-                    <img src="">
+                    <img src="../images/icons/youtube/soriano.jpg">
                 </div>
             </div>
 
             <div class="right">
-                <div class="text"></div>
-                <div class="text"></div>
-                <a href=""></a>
+                <div class="name">Esteban Soriano</div>
+                <div class="mail">estebansolo72@gmail.com</div>
+                <a href="https://myaccount.google.com/u/0/?utm_source=YouTubeWeb&tab=rk&utm_medium=act&tab=rk&hl=es">Gestiona
+                    tu cuenta de Google</a>
             </div>
         </div>
 
         <div class="inner">
             <div class="block">
-                <a href="" class="line">
+                <a href="https://www.youtube.com/channel/UCZ_BtTctsLFWZd9-XS-WRnA?view_as=subscriber" class="line">
                     <div class="icon">
-                        <img src="">
+                        <img src="../images/icons/youtube/tu canal.png">
                     </div>
 
                     <div class="text">Tu canal</div>
                 </a>
-                <a href="" class="line">
+                <a href="https://www.youtube.com/paid_memberships" class="line">
                     <div class="icon">
-                        <img src="">
+                        <img src="../images/icons/youtube/suscripciones.png">
                     </div>
 
                     <div class="text">Suscripciones de pago</div>
                 </a>
-                <a href="" class="line">
+                <a href="https://studio.youtube.com/channel/UCZ_BtTctsLFWZd9-XS-WRnA" class="line">
                     <div class="icon">
-                        <img src="">
+                        <img src="../images/icons/youtube/YTStudio.png">
                     </div>
 
                     <div class="text">YouTube Studio</div>
                 </a>
                 <a href="" class="line">
                     <div class="icon">
-                        <img src="">
+                        <img src="../images/icons/youtube/cambiar de cuenta.png">
                     </div>
 
                     <div class="text">Cambiar de cuenta</div>
 
                     <div class="icon">
-                        <img src="">
+                        <img src="../images/icons/youtube/arrow.png">
                     </div>
                 </a>
                 <a href="" class="line">
                     <div class="icon">
-                        <img src="">
+                        <img src="../images/icons/youtube/cerrar sesion.png">
                     </div>
 
                     <div class="text">Cerrar sesión</div>
@@ -396,68 +401,68 @@
             <div class="block">
                 <a href="" class="line">
                     <div class="icon">
-                        <img src="">
+                        <img src="../images/icons/youtube/tema oscuro.png">
                     </div>
 
                     <div class="text">Tema oscuro: desactivado</div>
 
                     <div class="icon">
-                        <img src="">
+                        <img src="../images/icons/youtube/arrow.png">
                     </div>
                 </a>
                 <a href="" class="line">
                     <div class="icon">
-                        <img src="">
+                        <img src="../images/icons/youtube/idioma.png">
                     </div>
 
                     <div class="text">Idioma: Español</div>
 
                     <div class="icon">
-                        <img src="">
+                        <img src="../images/icons/youtube/arrow.png">
                     </div>
                 </a>
                 <a href="" class="line">
                     <div class="icon">
-                        <img src="">
+                        <img src="../images/icons/youtube/ubicacion.png">
                     </div>
 
-                    <div class="text">País: España</div>
+                    <div class="text">Ubicación: España</div>
 
                     <div class="icon">
-                        <img src="">
+                        <img src="../images/icons/youtube/arrow.png">
                     </div>
                 </a>
-                <a href="" class="line">
+                <a href="https://www.youtube.com/account" class="line">
                     <div class="icon">
-                        <img src="">
+                        <img src="../images/icons/youtube/configuracion2.png">
                     </div>
 
                     <div class="text">Configuración</div>
                 </a>
-                <a href="" class="line">
+                <a href="https://myaccount.google.com/u/0/yourdata/youtube?hl=es&pli=1" class="line">
                     <div class="icon">
-                        <img src="">
+                        <img src="../images/icons/youtube/tus datos.png">
                     </div>
 
                     <div class="text">Tus datos de YouTube</div>
                 </a>
                 <a href="" class="line">
                     <div class="icon">
-                        <img src="">
+                        <img src="../images/icons/youtube/ayuda2.png">
                     </div>
 
                     <div class="text">Ayuda</div>
                 </a>
                 <a href="" class="line">
                     <div class="icon">
-                        <img src="">
+                        <img src="../images/icons/youtube/enviarSugerencias2.png">
                     </div>
 
                     <div class="text">Enviar sugerencias</div>
                 </a>
                 <a href="" class="line">
                     <div class="icon">
-                        <img src="">
+                        <img src="../images/icons/youtube/combinacionDeTeclas.png">
                     </div>
 
                     <div class="text">Combinación de teclas</div>
@@ -465,17 +470,13 @@
             </div>
 
             <a href="" class="footer">
-                <div class="text">Modo restringido: Desactivado</div>
+                <div class="text">Modo restringido: desactivado</div>
                 <div class="icon">
-                    <img src="">
+                    <img src="../images/icons/youtube/arrow.png">
                 </div>
             </a>
         </div>
     </div>
-
-    <!-- -------------------------------------------- -->
-
-
 
     <main></main>
 
