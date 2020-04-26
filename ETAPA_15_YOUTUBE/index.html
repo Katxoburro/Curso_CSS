@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú de YouTube</title>
+    <title>SorianoTube</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="https://s.ytimg.com/yts/img/favicon_48-vflVjB_Qk.png" sizes="48x48">
 </head>
@@ -54,7 +54,10 @@
                 <img src="../images/icons/youtube/notificaciones.png">
             </div>
 
-            <div class="icon">
+            <div class="icon" onclick="
+            document.getElementById('appsBox').style.display='flow-root';
+            document.getElementById('appsBoxHidden').style.display='block';
+            ">
                 <img src="../images/icons/youtube/aplicaciones.png">
             </div>
 
@@ -588,7 +591,8 @@
 
                     <div class="text">
                         <div class="title">
-                            Juan Francisco Calero - CLUB ONMOTOR ha subido "NUESTRO" GOLF ELÉCTRICO de los 100.000 km SE HA ROTO, y ESO NO ES LO PEOR: ENTREVISTA CON DANI
+                            Juan Francisco Calero - CLUB ONMOTOR ha subido "NUESTRO" GOLF ELÉCTRICO de los 100.000 km SE
+                            HA ROTO, y ESO NO ES LO PEOR: ENTREVISTA CON DANI
                         </div>
 
                         <div class="date">Hace 6 días</div>
@@ -614,7 +618,8 @@
 
                     <div class="text">
                         <div class="title">
-                            Juan Francisco Calero - CLUB ONMOTOR ha subido ¿BAJARÁN LOS PRECIOS? ¿Y LAS EMISIONES? MOTOR: TODAS LAS CLAVES de lo que ESTÁ PASANDO y va a PASAR
+                            Juan Francisco Calero - CLUB ONMOTOR ha subido ¿BAJARÁN LOS PRECIOS? ¿Y LAS EMISIONES?
+                            MOTOR: TODAS LAS CLAVES de lo que ESTÁ PASANDO y va a PASAR
                         </div>
 
                         <div class="date">Hace 1 semana</div>
@@ -640,7 +645,8 @@
 
                     <div class="text">
                         <div class="title">
-                            Juan Francisco Calero - CLUB ONMOTOR ha subido CARA a CARA: KIA NIRO vs NISSAN LEAF vs HYUNDAI IONIQ ELÉCTRICOS: TEST de CONSUMOS y CONFORT
+                            Juan Francisco Calero - CLUB ONMOTOR ha subido CARA a CARA: KIA NIRO vs NISSAN LEAF vs
+                            HYUNDAI IONIQ ELÉCTRICOS: TEST de CONSUMOS y CONFORT
                         </div>
 
                         <div class="date">Hace 1 semana</div>
@@ -666,7 +672,8 @@
 
                     <div class="text">
                         <div class="title">
-                            Juan Francisco Calero - CLUB ONMOTOR ha subido DESDE 1000€: MIS COCHES FAVORITOS QUE AÚN PODEMOS TENER (I): ¡Os abro mi bloc de notas!
+                            Juan Francisco Calero - CLUB ONMOTOR ha subido DESDE 1000€: MIS COCHES FAVORITOS QUE AÚN
+                            PODEMOS TENER (I): ¡Os abro mi bloc de notas!
                         </div>
 
                         <div class="date">Hace 1 semana</div>
@@ -692,7 +699,8 @@
 
                     <div class="text">
                         <div class="title">
-                            Juan Francisco Calero - CLUB ONMOTOR ha subido ¿QUIÉN MATÓ A SAAB? ESTE 9-5 de 2011 es EL ÚLTIMO SAAB (El caso SAAB)
+                            Juan Francisco Calero - CLUB ONMOTOR ha subido ¿QUIÉN MATÓ A SAAB? ESTE 9-5 de 2011 es EL
+                            ÚLTIMO SAAB (El caso SAAB)
                         </div>
 
                         <div class="date">Hace 2 semana</div>
@@ -711,6 +719,61 @@
             </div>
         </div>
     </div>
+
+    <div class="appsBoxHidden" id="appsBoxHidden" onclick="
+    document.getElementById('appsBox').style.display='none';
+    document.getElementById('appsBoxHidden').style.display='none';
+    "></div>
+
+    <div class="appsBox" id="appsBox">
+        <div class="block">
+            <div class="line">
+                <div class="icon">
+                    <img src="../images/icons/youtube/ytTV.png">
+                </div>
+
+                <div class="text">YouTube TV</div>
+            </div>
+        </div>
+
+        <div class="block">
+            <div class="line">
+                <div class="icon">
+                    <img src="../images/icons/youtube/ytMusic.png">
+                </div>
+
+                <div class="text">YouTube Music</div>
+            </div>
+
+            <div class="line">
+                <div class="icon">
+                    <img src="../images/icons/youtube/ytKids.png">
+                </div>
+
+                <div class="text">YouTube Kids</div>
+            </div>
+        </div>
+
+        <div class="block">
+            <div class="line">
+                <div class="icon">
+                    <img src="../images/icons/youtube/youtubeRojo2.png">
+                </div>
+
+                <div class="text">Academia de Creadores</div>
+            </div>
+
+            <div class="line">
+                <div class="icon">
+                    <img src="../images/icons/youtube/youtubeRojo2.png">
+                </div>
+
+                <div class="text">YouTube para Artistas</div>
+            </div>
+        </div>
+    </div>
+
+    
 
     <main></main>
 

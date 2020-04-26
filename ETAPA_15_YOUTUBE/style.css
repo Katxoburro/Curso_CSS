@@ -16,6 +16,8 @@ body {
 .icon {
     width: 24px;
     height: 24px;
+    min-width: 24px;
+    min-height: 24px;
 }
 
 img {
@@ -529,7 +531,6 @@ nav .inner .footer .copyright {
     position: fixed;
     display: none;
     z-index: 4;
-    border: 1px solid rgba(0, 0, 0, 0.1);
     border-top: none;
     box-sizing: border-box;
     top: 8px;
@@ -667,3 +668,58 @@ nav .inner .footer .copyright {
     cursor: pointer;
 }
 
+.appsBoxHidden {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+}
+
+.appsBox {
+    width: 247px;
+    background-color: rgba(255, 255, 255, 0.98);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    position: fixed;
+    display: none;
+    z-index: 4;
+    border-top: none;
+    box-sizing: border-box;
+    right: 134px;
+    top: 48px;
+}
+
+.appsBox .block {
+    width: 100%;
+    border-bottom: 1px solid #efefef;
+}
+
+.appsBox .block:last-child {
+    border: none;
+}
+
+.appsBox .block .line {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 8px 0 8px 16px;
+    cursor: pointer;
+}
+
+.appsBox .block .line:hover {
+    background-color: #f2f2f2;
+}
+
+.appsBox .block .line .icon {
+    cursor: pointer;
+}
+
+.appsBox .block .line .text {
+    padding: 0 0 0 16px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #030303;
+}
