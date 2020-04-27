@@ -61,7 +61,10 @@
                 <img src="../images/icons/youtube/aplicaciones.png">
             </div>
 
-            <div class="icon">
+            <div class="icon" onclick="
+            document.getElementById('newVideoBox').style.display='flow-root';
+            document.getElementById('newVideoBoxHidden').style.display='block';
+            ">
                 <img src="../images/icons/youtube/creaarVideos.png">
             </div>
         </div>
@@ -773,7 +776,29 @@
         </div>
     </div>
 
-    
+    <div class="newVideoBoxHidden" id="newVideoBoxHidden" onclick="
+    document.getElementById('newVideoBox').style.display='none';
+    document.getElementById('newVideoBoxHidden').style.display='none';
+    "></div>
+
+    <div class="newVideoBox" id="newVideoBox">
+        <div class="line">
+            <div class="icon">
+                <img src="../images/icons/youtube/newVideo.png">
+            </div>
+
+            <div class="text">Subir vídeo</div>
+        </div>
+
+        <div class="line">
+            <div class="icon">
+                <img src="../images/icons/youtube/directoRed.png">
+            </div>
+
+            <div class="text">Emitir en directo</div>
+        </div>
+
+    </div>
 
     <main></main>
 
