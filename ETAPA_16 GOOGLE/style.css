@@ -1,0 +1,92 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    overflow-y: scroll;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    font-size: 13px;
+    color: #000000;
+    opacity: 0.75;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .right {
+    display: flex;
+    align-items: center;
+}
+
+header .right .button {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+header .right .avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+header .right .avatar img {
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    font-size: 14px;
+    color: #5f6368;
+}
+
+footer .lineUp {
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+}
+
+footer .lineUp .text {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.54);
+    padding: 0 0 0 27px;
+    margin: 0 0 0 3px;
+}
+
+footer .lineDown {
+    line-height: 40px;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .lineDown a {
+    padding: 0 0 0 27px;
+}
+
+footer .lineDown .left a:first-child {
+    margin: 0 -4px 0 3px;
+}
+
+footer .lineDown .right a:last-child {
+    margin: 0 30px 0 -4px;
+}
+
+footer .lineDown .right a:nth-last-child(2) {
+    margin: 0 0 0 -4px;
+}
