@@ -10,7 +10,7 @@ a:hover {
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    /* overflow-y: scroll; */
+    overflow-y: scroll;
 }
 
 header {
@@ -24,7 +24,7 @@ header {
 header a {
     padding: 0 0 0 15px;
     display: inline-block;
-   }
+}
 
 header .left {
     line-height: 61px;
@@ -33,15 +33,15 @@ header .left {
 }
 
 header .right {
-    color: rgba(0,0,0,0.87);
+    color: rgba(0, 0, 0, 0.87);
     display: flex;
     align-items: center;
     padding: 0 29px 0 0;
- }
+}
 
- header .right a {
+header .right a {
     margin: 2px 0 0 0;
- }
+}
 
 header .right .button {
     width: 30px;
@@ -69,6 +69,115 @@ header .right .avatar {
 
 header .right .avatar img {
     width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+.appsBox {
+    min-height: 234px;
+    max-height: 458px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    box-sizing: border-box;
+    margin: 58px 32px 0 0;
+    padding: 17px 0 20px 12px;
+    width: 330px;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .30), 0 2px 6px 2px rgba(60, 64, 67, .15);
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+/* CONTENEDOR GENERAL */
+.appsBox::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* PALO O FONDO DESLIZABLE */
+.appsBox::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+/* MANEJADOR DENTRO DEL PALO */
+.appsBox::-webkit-scrollbar-thumb {
+    background-color: #dbdce0;
+    border-radius: 8px;
+}
+
+.appsBox ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.appsBox ul li {
+    background-color: limegreen;
+    width: calc(100% / 3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.appsBox ul li:nth-child(odd) {
+    background: #49b;
+}
+
+.appsBox ul li a {
+    width: 84px;
+    height: 84px;
+    background-color: rgb(204, 220, 231);
+    display: block;
+    border-radius: 8px;
+    margin: 8px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.appsBox ul li a:hover {
+    background-color: #f6fafe;
+}
+
+.appsBox ul li a:active {
+    background-color: #e8f0fd;
+}
+
+.appsBox ul li a .icon {
+    width: 64px;
+    height: 64px;
+    background-color: blanchedalmond;
+    margin: 5px 0 0 0;
+}
+
+.appsBox ul li a .text {
+    color: #404040;
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: .09px;
+    line-height: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 76px;
+    text-align: center;
+}
+
+.appsBox .divider {
+    border-bottom: 1px solid #e8eaed;
+    display: block;
+    left: 0;
+    position: relative;
+    width: 100%;
+    margin: 12px 0;
 }
 
 footer {
