@@ -6,31 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página principal de Google</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../images/icons/google/google.png" sizes="48x48">
 </head>
 
 <body>
     <header>
         <div class="left">
-            <a href="">Sobre Google</a>
-            <a href="">Tienda</a>
+            <a href="https://about.google/?fg=1&utm_source=google-ES&utm_medium=referral&utm_campaign=hp-header">Sobre
+                Google
+            </a>
+
+            <a
+                href="https://store.google.com/ES/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=es-ES">Tienda
+            </a>
         </div>
 
         <div class="right">
-            <a href="">Gmail</a>
-            <a href="">Imágenes</a>
-            <div class="button"></div>
+            <a href="https://mail.google.com/mail/u/0/?tab=wm&ogbl#inbox">Gmail
+            </a>
+
+            <a href="https://www.google.es/imghp?hl=es&tab=wi&ogbl">Imágenes
+            </a>
+
+            <div class="button" onclick="
+            document.getElementById('appsBox').style.display='flow-root';
+            document.getElementById('appsBoxHidden').style.display='block';
+        "></div>
+
             <div class="avatar">
                 <img src="../images/icons/youtube/soriano.jpg">
             </div>
         </div>
     </header>
 
+    <div class="appsBoxHidden" id="appsBoxHidden" onclick="
+    document.getElementById('appsBox').style.display='none';
+    document.getElementById('appsBoxHidden').style.display='none';
+"></div>
+
     <div class="appsBox" id="appsBox">
         <div class="inner">
             <ul>
                 <li>
                     <a href="">
-                        <div class="icon"></div>
+                        <div class="icon">
+                            <img
+                                src="https://lh3.googleusercontent.com/-hkuyR78WYZE/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucly-njMmkW3aBXwXUfUG1LPDkhVwg.CMID/s128-b16-cc-rp/photo.jpg">
+                        </div>
                         <div class="text">Cuenta</div>
                     </a>
                 </li>
@@ -49,61 +71,61 @@
                 <li>
                     <a href="">
                         <div class="icon"></div>
-                        <div class="text"></div>
+                        <div class="text">YouTube</div>
                     </a>
                 </li>
                 <li>
                     <a href="">
                         <div class="icon"></div>
-                        <div class="text"></div>
+                        <div class="text">Play</div>
                     </a>
                 </li>
                 <li>
                     <a href="">
                         <div class="icon"></div>
-                        <div class="text"></div>
+                        <div class="text">Noticias</div>
                     </a>
                 </li>
                 <li>
                     <a href="">
                         <div class="icon"></div>
-                        <div class="text"></div>
+                        <div class="text">Gmail</div>
                     </a>
                 </li>
                 <li>
                     <a href="">
                         <div class="icon"></div>
-                        <div class="text"></div>
+                        <div class="text">Drive</div>
                     </a>
                 </li>
                 <li>
                     <a href="">
                         <div class="icon"></div>
-                        <div class="text"></div>
+                        <div class="text">Calendar</div>
                     </a>
                 </li>
                 <li>
                     <a href="">
                         <div class="icon"></div>
-                        <div class="text"></div>
+                        <div class="text">Traductor</div>
                     </a>
                 </li>
                 <li>
                     <a href="">
                         <div class="icon"></div>
-                        <div class="text"></div>
+                        <div class="text">Fotos</div>
                     </a>
                 </li>
                 <li>
                     <a href="">
                         <div class="icon"></div>
-                        <div class="text"></div>
+                        <div class="text">Servicio de asistencia</div>
                     </a>
                 </li>
                 <li>
                     <a href="">
                         <div class="icon"></div>
-                        <div class="text"></div>
+                        <div class="text">Duo</div>
                     </a>
                 </li>
             </ul>
@@ -114,96 +136,100 @@
                 <li>
                     <a href="">
                         <div class="icon"></div>
-                        <div class="text"></div>
+                        <div class="text">Shopping</div>
                     </a>
                 </li>
                 <li>
                     <a href="">
                         <div class="icon"></div>
-                        <div class="text"></div>
+                        <div class="text">Documentos</div>
                     </a>
                 </li>
                 <li>
                     <a href="">
                         <div class="icon"></div>
-                        <div class="text"></div>
+                        <div class="text">Libros</div>
                     </a>
                 </li>
                 <li>
                     <a href="">
                         <div class="icon"></div>
-                        <div class="text"></div>
+                        <div class="text">Blogger</div>
                     </a>
                 </li>
                 <li>
                     <a href="">
                         <div class="icon"></div>
-                        <div class="text"></div>
+                        <div class="text">Contactos</div>
                     </a>
                 </li>
                 <li>
                     <a href="">
                         <div class="icon"></div>
-                        <div class="text"></div>
+                        <div class="text">My Business</div>
                     </a>
                 </li>
                 <li>
                     <a href="">
                         <div class="icon"></div>
-                        <div class="text"></div>
+                        <div class="text">Hangouts</div>
                     </a>
                 </li>
                 <li>
                     <a href="">
                         <div class="icon"></div>
-                        <div class="text"></div>
+                        <div class="text">Hojas de cálculo</div>
                     </a>
                 </li>
                 <li>
                     <a href="">
                         <div class="icon"></div>
-                        <div class="text"></div>
+                        <div class="text">Presentaciones</div>
                     </a>
                 </li>
                 <li>
                     <a href="">
                         <div class="icon"></div>
-                        <div class="text"></div>
+                        <div class="text">Google Keep</div>
                     </a>
                 </li>
                 <li>
                     <a href="">
                         <div class="icon"></div>
-                        <div class="text"></div>
+                        <div class="text">Jamboard</div>
                     </a>
                 </li>
                 <li>
                     <a href="">
                         <div class="icon"></div>
-                        <div class="text"></div>
+                        <div class="text">Classroom</div>
                     </a>
                 </li>
                 <li>
                     <a href="">
                         <div class="icon"></div>
-                        <div class="text"></div>
+                        <div class="text">Earth</div>
                     </a>
                 </li>
                 <li>
                     <a href="">
                         <div class="icon"></div>
-                        <div class="text"></div>
+                        <div class="text">Colecciones</div>
                     </a>
                 </li>
                 <li>
                     <a href="">
                         <div class="icon"></div>
-                        <div class="text"></div>
+                        <div class="text">Arts and Culture</div>
                     </a>
                 </li>
             </ul>
 
-            <div class="button"></div>
+            <div class="button">
+                <a href="https://about.google/intl/es/products/?tab=wh">
+                    <div class="text">Más de Google</div>
+                </a>
+            </div>
         </div>
     </div>
 
@@ -216,19 +242,40 @@
 
         <div class="lineDown">
             <div class="left">
-                <a href="">Publicidad</a>
-                <a href="">Empresa</a>
-                <a href="">Cómo funciona la Búsqueda</a>
+                <a
+                    href="https://ads.google.com/intl/es_es/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Publicidad
+                </a>
+
+                <a
+                    href="https://www.google.es/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none">Empresa
+                </a>
+
+                <a href="https://www.google.com/search/howsearchworks/?fg=1">Cómo funciona la Búsqueda
+                </a>
             </div>
 
             <div class="right">
-                <a href="">Privacidad</a>
-                <a href="">Condiciones</a>
+                <a href="https://policies.google.com/privacy?fg=1">Privacidad
+                </a>
+
+                <a href="https://policies.google.com/terms?fg=1">Términos
+                </a>
+
                 <a href="">Configuración</a>
             </div>
         </div>
 
     </footer>
+
+    <div class="settings" id="settings">
+        <a href="">Configuración de búsqueda</a>
+        <a href="">Búsqueda avanzada</a>
+        <a href="">Tus datos</a>
+        <a href="">Historial</a>
+        <a href="">Buscar en ayuda</a>
+        <a href="">Enviar comentarios</a>
+    </div>
+
 </body>
 
 </html>

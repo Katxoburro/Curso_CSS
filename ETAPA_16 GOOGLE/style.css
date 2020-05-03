@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap'); */
+
 a {
     text-decoration: none;
     color: inherit;
@@ -7,10 +10,14 @@ a:hover {
     text-decoration: underline;
 }
 
+img {
+    width: 100%;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 header {
@@ -71,67 +78,81 @@ header .right .avatar img {
     width: 100%;
 }
 
-li {
-    list-style: none;
+.appsBoxHidden {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
 }
 
 .appsBox {
-    min-height: 234px;
-    max-height: 458px;
+    z-index: 99;
     position: fixed;
     right: 0;
     top: 0;
+    display: none;
     box-sizing: border-box;
-    margin: 58px 32px 0 0;
-    padding: 17px 0 20px 12px;
+    margin: 59px 31px 0 0;
+    padding: 0 4.5px 0 0;
     width: 330px;
     background: #fff;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .30), 0 2px 6px 2px rgba(60, 64, 67, .15);
+}
+
+.appsBox .inner {
     overflow-x: hidden;
     overflow-y: scroll;
+    min-height: 234px;
+    max-height: 456px;
 }
 
 /* CONTENEDOR GENERAL */
-.appsBox::-webkit-scrollbar {
-    width: 8px;
+.appsBox .inner::-webkit-scrollbar {
+    width: 7.5px;
 }
 
 /* PALO O FONDO DESLIZABLE */
-.appsBox::-webkit-scrollbar-track {
+.appsBox .inner::-webkit-scrollbar-track {
     background-color: transparent;
+    margin: 3.5px 0;
 }
 
 /* MANEJADOR DENTRO DEL PALO */
-.appsBox::-webkit-scrollbar-thumb {
+.appsBox .inner::-webkit-scrollbar-thumb {
     background-color: #dbdce0;
-    border-radius: 8px;
+    border-radius: 7.5px;
 }
 
-.appsBox ul {
+.appsBox .inner ul {
     display: flex;
     margin: 0;
-    padding: 0;
+    padding: 13px 0 20px 14px;
     flex-wrap: wrap;
 }
 
-.appsBox ul li {
-    background-color: limegreen;
-    width: calc(100% / 3);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.appsBox .inner ul li {
+    display: inline-block;
+    height: 100px;
+    list-style: none;
+    padding: 0 7px;
+    position: relative;
+    transition: transform .2s cubic-bezier(.333, 0, 0, 1);
+    vertical-align: top;
+    width: 86px;
 }
 
-.appsBox ul li:nth-child(odd) {
+/* ALTERNAR COLORES PAR/IMPAR */
+/* .appsBox .inner ul li:nth-child(odd) {
     background: #49b;
-}
+} */
 
-.appsBox ul li a {
+.appsBox .inner ul li a {
     width: 84px;
-    height: 84px;
-    background-color: rgb(204, 220, 231);
     display: block;
     border-radius: 8px;
     margin: 8px 0;
@@ -143,22 +164,152 @@ li {
     text-decoration: none;
 }
 
-.appsBox ul li a:hover {
+.appsBox .inner ul li a:hover {
     background-color: #f6fafe;
 }
 
-.appsBox ul li a:active {
+.appsBox .inner ul li a:hover>.text {
+    white-space: initial;
+    text-overflow: inherit;
+    white-space: inherit;
+    word-break: break-word;
+    z-index: 9;
+}
+
+.appsBox .inner ul li a:active {
     background-color: #e8f0fd;
 }
 
-.appsBox ul li a .icon {
+.appsBox .inner ul li a .icon {
     width: 64px;
     height: 64px;
-    background-color: blanchedalmond;
     margin: 5px 0 0 0;
+    background-size: 64px 2824px;
+    background-image: url(https://ssl.gstatic.com/gb/images/p1_6269e604.png);
 }
 
-.appsBox ul li a .text {
+/* SECCIÓN DE IMÁGENES 'SPRITE' PRIMER «UL» */
+.appsBox .inner ul:first-child li:nth-child(1) a .icon {
+    background-image: none;
+}
+
+.appsBox .inner ul:first-child li:nth-child(2) a .icon {
+    background-position: 0 -138px;
+}
+
+.appsBox .inner ul:first-child li:nth-child(3) a .icon {
+    background-position: 0 -828px;
+}
+
+.appsBox .inner ul:first-child li:nth-child(4) a .icon {
+    background-position: 0 -1311px;
+}
+
+.appsBox .inner ul:first-child li:nth-child(5) a .icon {
+    background-position: 0 -207px;
+}
+
+.appsBox .inner ul:first-child li:nth-child(6) a .icon {
+    background-position: 0 -2001px;
+}
+
+.appsBox .inner ul:first-child li:nth-child(7) a .icon {
+    background-position: 0 -483px;
+}
+
+.appsBox .inner ul:first-child li:nth-child(8) a .icon {
+    background-position: 0 -2277px;
+}
+
+.appsBox .inner ul:first-child li:nth-child(9) a .icon {
+    background-position: 0 -2553px;
+}
+
+.appsBox .inner ul:first-child li:nth-child(10) a .icon {
+    background-position: 0 -1242px;
+}
+
+.appsBox .inner ul:first-child li:nth-child(11) a .icon {
+    background-position: 0 -621px;
+}
+
+.appsBox .inner ul:first-child li:nth-child(12) a .icon {
+    background-position: 0 0;
+    background-size: 64px 64px;
+    background-image: url(http://ssl.gstatic.com/gb/images/a/142da27578.png);
+}
+
+.appsBox .inner ul:first-child li:nth-child(13) a .icon {
+    background-position: 0 -897px;
+}
+
+/* SECCIÓN DE IMÁGENES 'SPRITE' SEGUNDO «UL» */
+.appsBox .inner ul:nth-child(3) li:nth-child(1) a .icon {
+    background-position: 0 -1725px;
+}
+
+.appsBox .inner ul:nth-child(3) li:nth-child(2) a .icon {
+    background-position: 0 -2208px;
+}
+
+.appsBox .inner ul:nth-child(3) li:nth-child(3) a .icon {
+    background-position: 0 -2346px;
+}
+
+.appsBox .inner ul:nth-child(3) li:nth-child(4) a .icon {
+    background-position: 0 -2139px;
+}
+
+.appsBox .inner ul:nth-child(3) li:nth-child(5) a .icon {
+    background-position: 0 -1863px;
+}
+
+.appsBox .inner ul:nth-child(3) li:nth-child(6) a .icon {
+    background-position: 0 0;
+    background-size: 64px 64px;
+    background-image: url(http://ssl.gstatic.com/gb/images/a/ea554714e7.png);
+}
+
+.appsBox .inner ul:nth-child(3) li:nth-child(7) a .icon {
+    background-position: 0 -2691px;
+}
+
+.appsBox .inner ul:nth-child(3) li:nth-child(8) a .icon {
+    background-position: 0 -1035px;
+}
+
+.appsBox .inner ul:nth-child(3) li:nth-child(9) a .icon {
+    background-position: 0 -276px;
+}
+
+.appsBox .inner ul:nth-child(3) li:nth-child(10) a .icon {
+    background-position: 0 0;
+    background-size: 64px 64px;
+    background-image: url(http://ssl.gstatic.com/gb/images/a/911e3628e6.png);
+}
+
+.appsBox .inner ul:nth-child(3) li:nth-child(11) a .icon {
+    background-position: 0 -690px;
+}
+
+.appsBox .inner ul:nth-child(3) li:nth-child(12) a .icon {
+    background-position: 0 -759px;
+}
+
+.appsBox .inner ul:nth-child(3) li:nth-child(13) a .icon {
+    background-position: 0 -2760px;
+}
+
+.appsBox .inner ul:nth-child(3) li:nth-child(14) a .icon {
+    background-position: 0 -1932px;
+}
+
+.appsBox .inner ul:nth-child(3) li:nth-child(15) a .icon {
+    background-position: 0 -1587px;
+}
+
+.appsBox .inner ul li a .text {
+    font-family: 'Open Sans', Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
     color: #404040;
     display: inline-block;
     font-size: 14px;
@@ -169,15 +320,65 @@ li {
     white-space: nowrap;
     width: 76px;
     text-align: center;
+    padding: 0 0 8px 0;
 }
 
-.appsBox .divider {
+.appsBox .inner .divider {
     border-bottom: 1px solid #e8eaed;
     display: block;
     left: 0;
     position: relative;
     width: 100%;
-    margin: 12px 0;
+    margin: 4px 0 0 0;
+}
+
+.appsBox .button {
+    width: 312px;
+    height: 74px;
+    position: relative;
+    text-align: center;
+    padding: 4px 0 0 0;
+}
+
+.appsBox .button .text:hover {
+    background-color: #f8fbff;
+    border-color: #cce0fc;
+}
+
+.appsBox .button .text:active {
+    background-color: #ecf3fe;
+    border-color: transparent;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .30), 0 2px 6px 2px rgba(60, 64, 67, .15);
+}
+
+.appsBox .button .text {
+    background-color: #fff;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #1a73e8;
+    display: inline-block;
+    /* font: 500 14px/16px 'Google Sans', Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+    DESGLOSE DEL FONT */
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: 'Open Sans', Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+    margin: 16px 0 20px 0;
+    max-width: 265px;
+    outline: 0;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    white-space: normal;
+    width: auto;
+    cursor: pointer;
+}
+
+.appsBox .button .text:active {
+    background-color: #ecf3fe;
+    border-color: transparent;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .30), 0 2px 6px 2px rgba(60, 64, 67, .15);
 }
 
 footer {
@@ -230,4 +431,38 @@ footer .lineDown .right a:last-child {
 
 footer .lineDown .right a:nth-last-child(2) {
     margin: 0 0 0 -4px;
+}
+
+.settings {
+    width: 211px;
+    height: auto;
+    right: 30px;
+    display: none;
+    position: fixed;
+    background: #fff;
+    border: 1px solid #999;
+    bottom: 30px;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+    text-align: left;
+    z-index: 104;
+}
+
+.settings a {
+    width: 100%;
+    height: 44px;
+    color: #5f6368;
+    display: block;
+    line-height: 44px;
+    padding: 0 20px;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.settings a:hover {
+    text-decoration: underline;
 }
