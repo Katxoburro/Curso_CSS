@@ -7,6 +7,7 @@
     <title>Página principal de Google</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="../images/icons/google/google.png" sizes="48x48">
+    <script src="scripts.js"></script>
 </head>
 
 <body>
@@ -28,10 +29,7 @@
             <a href="https://www.google.es/imghp?hl=es&tab=wi&ogbl">Imágenes
             </a>
 
-            <div class="button" onclick="
-            document.getElementById('appsBox').style.display='flow-root';
-            document.getElementById('appsBoxHidden').style.display='block';
-        "></div>
+            <div class="button" onclick="toggleAppsBox('open')"></div>
 
             <div class="avatar">
                 <img src="../images/icons/youtube/soriano.jpg">
@@ -39,10 +37,7 @@
         </div>
     </header>
 
-    <div class="appsBoxHidden" id="appsBoxHidden" onclick="
-    document.getElementById('appsBox').style.display='none';
-    document.getElementById('appsBoxHidden').style.display='none';
-"></div>
+    <div class="appsBoxHidden" id="appsBoxHidden" onclick="toggleAppsBox('close')"></div>
 
     <div class="appsBox" id="appsBox">
         <div class="inner">
@@ -261,11 +256,13 @@
                 <a href="https://policies.google.com/terms?fg=1">Términos
                 </a>
 
-                <a href="">Configuración</a>
+                <a onclick="toggleSettings('open')">Configuración</a>
             </div>
         </div>
 
     </footer>
+
+    <div class="settingsBoxHidden" id="settingsBoxHidden" onclick="toggleSettings('close')"></div>
 
     <div class="settings" id="settings">
         <a href="">Configuración de búsqueda</a>
@@ -275,7 +272,6 @@
         <a href="">Buscar en ayuda</a>
         <a href="">Enviar comentarios</a>
     </div>
-
 </body>
 
 </html>
