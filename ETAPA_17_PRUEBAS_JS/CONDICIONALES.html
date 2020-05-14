@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONDICIONALES</title>
+</head>
+
+<body>
+    <script>
+        var nombre = '',
+            edad = 48;
+
+        /*         if (nombre === 'Jaime') {
+                    document.write('Bienvenido ', nombre);
+
+                } else if (nombre === 'Luis') {
+                    document.write('Bienvenido ', nombre);
+                } else {
+                    document.write('Bienvenido Sr. X');
+                } */
+
+        // CONDICIONAL QUE COMPRUEBA LA MAYORÍA DE EDAD O EL NOMBRE DEL ADMINISTRADOR
+
+        /*  if (edad >= 18) {
+             document.write('Eres adulto. Bienvenido a mi Webería')
+
+         } else if (nombre === 'Esteban') {
+             document.write('Hola, Administrador de la Webería. Su edad es indiferente.');
+
+         } else {
+             alert('Eres un lechón y no tienes edad para entrar aquí');
+         } */
+
+        // CONDICIONALES «IF» CON DOS CONDICIONES: 
+        // «&&»: SE DEBEN CUMPLIR LAS DOS CONDICIONES (SUMATORIO), UNA «Y» OTRA 'AND'.
+        // «||»: SE DEBE CUMPLIR UNA DE LAS DOS CONDIONES (EXCLUYENTE), UNA «U» OTRA 'OR'.  
+
+        /* if (nombre === 'Esteban' && edad === 48) {
+            document.write('Edad y usuario correctos.');
+        } else {
+            document.write('usuario desconocido');
+        } */
+
+        // USAMOS ESTE IF PARA 'SETEAR' SI LA VARIABLE 'NOMBRE' TIENE ALGÚN VALOR:
+
+        if (nombre) {
+            console.log('OK');
+
+        } else {
+            console.log('VARIABLE VACÍA');
+        }
+
+        // si deseo comprobar si un número es mayor menor o igual que otro, tengo que evaluar tres posibilidades distintas. Primero puedo comprobar si los dos números son iguales, si lo son, ya he resuelto el problema, pero si no son iguales todavía tendré que ver cuál de los dos es mayor. 
+        var numero1 = 23;
+        var numero2 = 63;
+        if ( numero1 === numero2 ) {
+            document.write("Los dos números son iguales")
+
+        } else {
+            if ( numero1 > numero2 ) {
+                document.write("El primer número es mayor que el segundo")
+
+            } else {
+                document.write("El primer número es menor que el segundo")
+            }
+        }
+    </script>
+</body>
+
+</html>

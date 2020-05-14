@@ -1,7 +1,3 @@
-
-
-
-
 var variable = 'texto';
 var objeto = {
     clave: 'valor'
@@ -47,7 +43,7 @@ if (condición === 'valor') {} «para definir condición»
 
 -----------------------
 
-SIEMPRE SE GEBNERA UNA NUEVA VARIABLE PARA EL FOR
+SIEMPRE SE GENERA UNA NUEVA VARIABLE PARA EL FOR
 for (var elemento of array) {
     console.log('este es cada valor dentro del array', elemento);
 }
@@ -76,3 +72,9 @@ function semaforo(color) {
         return 'Color no válido':
     }
 }
+
+
+
+
+join -----> PARA SEPARAR ELEMENTOS EN ARRAY
+pop ------> PARA BORRAR ELEMENTOS EN ARRAY

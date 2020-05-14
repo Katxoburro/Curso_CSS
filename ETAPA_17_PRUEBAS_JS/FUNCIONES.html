@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>FUNCIONES</title>
+</head>
+
+<body>
+
+    
+
+    <script>
+        // GENERAMOS LA FUNCIÓN:
+        function suma(numero1, numero2) {
+            var numero1 = numero1;
+            var numero2 = numero2;
+
+            return numero1 + numero2;
+        }
+
+        // INVOCAMOS LA FUNCIÓN Y LE DAMOS LOS VALORES:
+        document.write(suma(10, 20));
+
+        // SE PUEDE REUTILIZAR TANTAS VECES CON DISTINTOS VALORES:
+        document.write('<br>');
+        document.write(suma(100, 270));
+
+
+        // COMPARA SI EL VALOR 1 ES MAYOR AL VALOR 2:
+        function numeroMaximo(valor1, valor2) {
+            if (valor1 > valor2) {
+                return valor1;
+            }
+            return valor2;
+        }
+
+        numeroMaximo(10, 20);
+
+
+        // FUNCIONES CON FORMULARIO: 
+        var suma2 = function() {
+            var numero1 = parseFloat(document.getElementById('primero').value);
+            var numero2 = parseFloat(document.getElementById('segundo').value);
+
+            var resultado = numero1 + numero2;
+            return resultado;
+        }
+
+
+    </script>
+
+
+   
+
+    <!-- <form action="">
+        <input type="text" id ='primero'>
+        <input type="text" id ='segundo'>
+        <input type="button" value="Sumar" onclick="alert( suma(10.50) )">
+    </form> -->
+
+    <form onsubmit="alert( suma2() )">
+        <input type="text" id="primero">
+        <input type="text" id="segundo">
+        <input type="submit" value="Sumar">
+    </form>
+
+
+</body>
+
+</html>

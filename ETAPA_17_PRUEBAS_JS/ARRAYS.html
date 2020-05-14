@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <script>
+
+var amigos = ['Onofre', 'Antxon', 'Vicente', 'Luciano', 'Filemón'];
+var amigos2 = ['Honorio', 'Valentín', 'Abilio', 'Juan José', 'Gerard', 'Mortadelo'];
+
+// ESTO CREA UN ARRAY CON DOS ARRAYS DENTRO:
+
+var amigos4 = [amigos, amigos2];
+
+// RENOMBRAR UN ELEMENTO DEL ARRAY DESDE FUERA:
+
+amigos[0] = 'Godofredo Onofre';
+amigos[1] = 'AntxonMari';
+
+// AÑADIR UN ELEMENTO DE FORMA DINÁMICA:
+
+amigos[5] = 'Chindasvinto';
+
+// PARA CONOCER EL NÚMERO DE ELEMENTOS DEL ARRAY: PROPIEDAD «.length»
+
+// document.write('Tienes ', amigos.length, ' amigos' );
+
+// AÑADIR UN ELEMENTO DE FORMA DINÁMICA SIN CONOCER LA POSICIÓN DEL ÚLTIMO:
+amigos[amigos.length] = 'Eleuterio';
+
+// AÑADIR VARIOS ELEMENTOS DE FORMA DINÁMICA AL FINAL DEL ARRAY: PROPIEDAD «.push()»:
+amigos.push('Ramón', 'Carlos', 'Eugenio');
+
+// ELIMINAR EL ÚLTIMO ELEMENTO DE FORMA DINÁMICA AL FINAL DEL ARRAY: PROPIEDAD «.pop():
+amigos.pop();
+
+// CONCATENAR LOS VALORES DE DOS ARRAYS: PROPIEDAD «.concat»:
+var amigos3 = amigos.concat(amigos2);
+
+// AGREGAR ESPACIADOS ENTRE LOS ELEMENTOS: ESPACIOS, COMAS. GUIONES... PROPIEDAD «.join»
+// document.write('Tienes ', amigos3.length, ' amigos y son: ', amigos3.join(', ') );
+
+// ORDENAR ALFABÉTICAMENTE LOS ELEMENTOS: PROPIEDADES «.sort» y «.reverse»
+var ordenadosAs = amigos3.sort();
+var ordenadosDe = amigos3.sort().reverse();
+//document.write(amigos3.sort().reverse());
+
+// O BIEN: 
+// document.write('Tienes ', amigos3.length, ' amigos y son en orden alfabético: ', ordenadosAs, amigos3.join(' ' + '»' + ' '));
+
+// document.write('Tienes ', amigos3.length, ' amigos y son en orden descendemte: ', ordenadosDe, amigos3.join(' ' + '»' + ' '));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

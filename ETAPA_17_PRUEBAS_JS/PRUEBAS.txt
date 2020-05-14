@@ -1,0 +1,75 @@
+/* var nombre = 'Esteban',
+    edad = 48;
+
+if ( nombre === 'Paco') {
+    document.write('Bienvenido, ' + nombre);
+} else {
+    document.write('Bienvenido,  Sr. X');
+} */
+
+//----------------------------------------
+
+/* var numeroDeUsuarios  = 50;
+
+for( i = 1; i <= numeroDeUsuarios; i++ ){
+    document.write(i + 'Ou Yeah!!!' + '<br>');
+} */
+
+
+/* var dias = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'];
+
+for( i = 0; i <= dias.length - 1; i++ ){
+    document.write(dias[i] + '<br>');
+}
+ */
+
+//----------------------------------------
+// «WHILE» FUNCIONA PARECIDO A «FOR», PERO CON LAS VAR FUERA.
+
+/* var dias = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'];
+var numeroDias = dias.length -1;
+var i = 0;
+
+while (i <= numeroDias) {
+    document.write( dias[i] + '<br>');
+    i++;
+}
+
+//SIEMPRE EJECUTA AL MENOS UNA VEZ,  AUNQUE NO SE CUMPLA LA CONDICIÓN.
+do {
+    
+} while (condition);
+
+ ----------------------------------------
+
+var suma = function(numero1, numero2){
+    var numero1 = parseFloat(document.getElementById("numero1").value);
+    var numero2 = parseFloat(document.getElementById("numero2").value);
+
+    var resultado = numero1 + numero2;
+    return resultado;
+}
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+// EJEMPLO DE CALCULADORA SIMPLE.
+
+<!-- <form action="">
+    <input type="text" id="numero1">
+    <input type="text" id="numero2">
+    <input type="button" value="Sumar" onclick="alert(suma (10, 50) );">
+</form> -->
