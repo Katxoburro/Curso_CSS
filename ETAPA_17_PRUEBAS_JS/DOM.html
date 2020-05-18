@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRUEBAS CON EL DOM</title>
+</head>
+
+<body>
+    <h1 id="titulo">Document Object Model</h1>
+    <div id="subtitulo"></div> 
+    <br>
+    <p>1.- Uno de los elementos mas utilizados en sitios web de productos son los Sliders, mejor conocidos como <b>Slideshows</b>, que como quizás ya sabrás son contenedores de imágenes que cambian de 1 en 1 cada cierto tiempo. Hoy vamos aprender como hacer un slideshow e implementarlo en nuestros sitios web, esto lo haremos con HTML, CSS y un poco de Javascript.</p>
+    <br>
+    <p id="segundo">2.- Si ya eres usuario veterano del sitio o del canal de FalconMasters en Youtube seguramente ya sabrás como hacer menús de navegación, pero hoy vamos a aprender a hacer otro tipo de menú de navegación, un menú de navegación diferente, ya que vamos a utilizar animaciones CSS 3 que nos permitirán darle increíbles efectos a nuestro menú.</p>
+    <br>
+    <p>3.- Una de las preguntas mas frecuentes que me hacen en internet es, ¿Como puedo hacer sitio web Responsive? Así que he decidido hacer este tutorial en el cual les explico a grandes rasgos que es el diseño adaptable, también conocido como Responsive Design y después te explico que puedes hacer para convertir tu sitio en responsive y que se pueda visualizar desde cualquier dispositivo móvil.</p>
+
+<script>
+// 1.- CREAR EL ELEMENTO.
+var elemento = document.createElement('h2');
+// 2.- CREAR UN NODO DE TEXTO.
+var contenido = document.createTextNode('Este es mi segundo titular');
+// 3.- AÑADIR EL NODO DE TEXTO AL ELEMENTO.
+elemento.appendChild(contenido);
+// 4.- AGREGAR ATRIBUTOS AL ELEMENTO.
+elemento.setAttribute('align', 'center');
+// 5.- AGREGAR EL ELEMENTO AL DOCUMENTO.
+document.getElementById("subtitulo").appendChild(elemento);
+
+
+
+
+</script>
+
+
+
+
+</body>
+
+</html>

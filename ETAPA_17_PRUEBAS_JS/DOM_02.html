@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRUEBAS CON EL DOM</title>
+</head>
+
+<body>
+    <ol id="lista">
+        <li>Aprende como hacer un sitio web adaptable a dispositivos móviles, la manera mas fácil rápida y efectiva</li>
+
+        <li>Aprende a usar iconos personalizados en tu sitio web mediante fuentes y CSS</li>
+    </ol>
+
+<script>
+
+var elemento = document.createElement('li');
+var contenido = document.createTextNode('Aprende como hacer un menú de navegación desplegable con Animaciones CSS3');
+elemento.appendChild(contenido);
+
+var padre = document.getElementsByTagName('li')[0].parentNode;
+var primerElemento = document.getElementsByTagName('li')[0];
+// O TAMBIÉN ASÍ:
+// var padre = document.getElementById('lista');
+
+// padre.appendChild(elemento); //AÑADE AL FINAL
+padre.insertBefore(elemento, primerElemento); // AÑADE ANTES DE «TAL» ELEMENTO
+
+ 
+
+
+</script>
+
+
+
+
+</body>
+
+</html>
