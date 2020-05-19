@@ -1,7 +1,7 @@
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -37,6 +37,18 @@ body {
     width: 100%;
 }
 
+.fecha .esen {
+    width: 30px;
+    height: 30px;
+    margin: 0 0 0 335px;
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .reloj {
     font-family: Oswald, Arial;
     width: 100%;
@@ -52,6 +64,22 @@ body {
 
 .reloj .segundero .segundos,
 .reloj .segundero .amPm {
-font-size: 2rem;
-display: block;
+    font-size: 2rem;
+    display: block;
+}
+
+.reloj .hora12o24 {
+    background-color: aqua;
+    width: 30px;
+    height: 30px;
+    margin: 0 0 0 335px;
+}
+
+.reloj .hora12o24 img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.segundos24 {
+    font-size: 64px !important;
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,31 +8,38 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="wrap">
         <div class="widget">
             <div class="fecha">
-                <p id="diaSemana" class="diaSemana"></p>
-                <p>, </p>
-                <p id="dia" class="dia"></p>
-                <p>de</p>
-                <p id="mes" class="mes"></p>
-                <p>de</p>
-                <p id="year" class="year"></p>
+                <p id="diaMesAno"></p>
+                <div id="esen" class="esen" onclick="cambioIdioma()"></div>
             </div>
 
             <div class="reloj">
                 <p id="horas" class="horas"></p>
+
                 <p>:</p>
+
                 <p id="minutos" class="minutos"></p>
+
                 <p>:</p>
+
                 <div class="segundero">
                     <p id="amPm" class="amPm"></p>
+
                     <p id="segundos" class="segundos"></p>
+                </div>
+
+                <div id="hora12o24" class="hora12o24" onclick="cambioTipoHorario()">
+                   <img id="12horas" src="../images/12horas.png">
+                   <img id="24horas" src="../images/24horas.png">
                 </div>
             </div>
         </div>
     </div>
     <script src="scripts.js"></script>
 </body>
+
 </html>
