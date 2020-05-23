@@ -89,7 +89,7 @@ var actualizarHora12 = function () {
 
     // PREGUNTA SI LAS HORAS, MINUTOS Y SEGUNDOS SON MENOS QUE 10 Y AÑADE UN 0 DELANTE.
 
-    if (horas === 00) {
+    if (horas === 0) {
         horas = 12;
     }
 
@@ -141,3 +141,13 @@ function cambioIdioma() {
 
     actualizarHora12();
 };
+
+
+
+
+function enviarDatos(form) {
+    var data = JSON.stringify( $(form).serializeArray() );
+    console.log( JSON.parse(data) );
+
+    return false; //don't submit
+}

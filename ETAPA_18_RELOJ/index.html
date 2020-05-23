@@ -7,6 +7,7 @@
     <title>Reloj digital de 12 horas</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-git2.js"></script>
 </head>
 
 <body>
@@ -33,12 +34,32 @@
                 </div>
 
                 <div id="hora12o24" class="hora12o24" onclick="cambioTipoHorario()">
-                   <img id="12horas" src="../images/12horas.png">
-                   <img id="24horas" src="../images/24horas.png">
+                    <img id="12horas" src="../images/12horas.png">
+                    <img id="24horas" src="../images/24horas.png">
                 </div>
             </div>
         </div>
     </div>
+    
+    <form onsubmit='return enviarDatos(this)'>
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="name" id="nombre" placeholder="Escriba su nombre:" required>
+
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" name="surname" id="apellidos" placeholder="Apellido 1º Apellido 2º:" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="text" name="email" id="email" placeholder="Escriba su correo electrónico:" required>
+
+        <label for="asunto">Asunto:</label>
+        <input type="text" name="asunto" id="asunto" placeholder="Titular de la consulta:">
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea name="mensaje" id="mensaje" placeholder="Describa brevemente en menos de 300 carácteres" maxlength="300"></textarea>
+
+        <input type="submit" value="Enviar">
+    </form>
+    
     <script src="scripts.js"></script>
 </body>
 
