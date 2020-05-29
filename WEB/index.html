@@ -4,8 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./imágenes/20146_1126658344957_3146194_n.jpg">
     <link rel="stylesheet" href="../WEB/css/style.css">
-    <title>Título de mi Web</title>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="../WEB/js/jquery.slides.min.js"></script>
+    <script>
+        $(function () {
+            $("#slideshow").slidesjs();
+        });
+    </script>
+    <title>AntxonMari Katxoburro Boinaetxea</title>
 </head>
 
 <body>
@@ -28,8 +36,14 @@
 
     <section id="wrap">
         <section id="main">
-            <section id="slideshow"></section>
-            <section id="bienvenidos">
+            <section id="slideshow">
+                <img src="../WEB/imágenes/slideshow/01.jpg">
+                <img src="../WEB/imágenes/slideshow/02.jpg">
+                <img src="../WEB/imágenes/slideshow/03.jpg">
+                <img src="../WEB/imágenes/slideshow/04.jpg">
+                <img src="../WEB/imágenes/slideshow/05.jpg">
+            </section>
+<!--             <section id="bienvenidos">
                 <article>
                     <hgroup>
                         <h3>Bienvenido a mi Webería.</h3>
@@ -48,7 +62,7 @@
 
 
             </section>
-
+ -->
             <section id="contenido">
                 <article>
                     <hgroup>
@@ -82,7 +96,8 @@
 
                     <p>Suspendisse feugiat rhoncus metus, sit amet rhoncus dolor laoreet sed. Nullam scelerisque
                         accumsan orci,
-                        in sodales leo mattis et. <br><br>Maecenas non orci eu nulla fermentum pellentesque. Duis ante leo,
+                        in sodales leo mattis et. <br><br>Maecenas non orci eu nulla fermentum pellentesque. Duis ante
+                        leo,
                         dapibus sed
                         diam nec, tincidunt luctus libero. Integer ornare vel nulla auctor sollicitudin. Aliquam erat
                         volutpat.
@@ -123,13 +138,35 @@
 
             </section>
 
-            <section id="redes_s">
-                <div class="email"><a href="#"></a> </div>
-                <div class="twitter"><a href="#"></a> </div>
-                <div class="youtube"><a href="#"></a> </div>
-                <div class="facebook"><a href="#"></a> </div>
-            </section>
+            <section id="redes">
+                <a href="#" class="facebook">
+                    <div class="icon">
+                        <img src="../WEB/imágenes/Icons/FACEBOOK.png">
+                    </div>
+                    <div class="text">Facebook</div>
+                </a>
 
+                <a href="#" class="instagram">
+                    <div class="icon">
+                        <img src="../WEB/imágenes/Icons/INSTAGRAM.png">
+                    </div>
+                    <div class="text">Instagram</div>
+                </a>
+
+                <a href="#" class="twitter">
+                    <div class="icon">
+                        <img src="../WEB/imágenes/Icons/TWITTERT.png">
+                    </div>
+                    <div class="text">Twitter</div>
+                </a>
+
+                <a href="#" class="youtube">
+                    <div class="icon">
+                        <img src="../WEB/imágenes/Icons/YOUTUBE.png">
+                    </div>
+                    <div class="text">YouTube</div>
+                </a>
+            </section>
         </footer>
 
         <div id="copyright">
