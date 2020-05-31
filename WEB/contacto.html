@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./imágenes/20146_1126658344957_3146194_n.jpg">
+    <link rel="stylesheet" href="../WEB/css/style.css">
+    <title>Webería de Katxoburro</title>
+</head>
+
+<body>
+
+    <header>
+        <div id="subheader">
+            <div id="logotipo">
+                <p><a href="file:///C:/Users/esteb/Desktop/PROYECTOS/Curso_CSS/WEB/index.html">Katxoburro</a></p>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <!-- <li><a href="#">Contacto</a></li> -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="wrap">
+        <!--         <div id="contactBox" class="contactBox">
+
+            <div class="contact-rich">
+                <h4>Nuestra tienda</h4>
+                <div class="block">
+                    <div class="icon"><i class="material-icons"></i></div>
+                    <div class="data">Castellano Bros SL<br>C/Príncipe de Vergara, 27<br>28001
+                        Madrid<br>Madrid<br>España</div>
+                </div>
+                <hr>
+                <div class="block">
+                    <div class="icon"><i class="material-icons"></i></div>
+                    <div class="data">
+                        Tel:<br>
+                        <a href="tel:+34 648 83 36 58">+34 648 83 36 58</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="block">
+                    <div class="icon"><i class="material-icons"></i></div>
+                    <div class="data email">
+                        Email:<br>
+                    </div>
+                    <a href="mailto:ventas@castellanolg.com">ventas@castellanolg.com</a>
+                </div>
+            </div>
+
+        </div>
+ -->
+        <form onsubmit='return enviarDatos(this)'>
+            <label for="asunto">Asunto:</label>
+            <input type="text" name="asunto" id="asunto" placeholder="Asunto:" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="text" name="email" id="email" placeholder="su@correo.com:" required>
+
+
+            <div class="addFileBox">
+                <label class="labelFile">Archivo adjunto</label>
+                <div class="col-md-6">
+                    <input type="file" name="fileUpload" class="filestyle" data-buttontext="Seleccionar archivo"
+                        id="filestyle-0" tabindex="-1" style="position: absolute; clip: rect(0px, 0px, 0px, 0px);">
+                    <div class="inputGroup"><input type="text" class="form-control " placeholder="" disabled=""> <span
+                            class="group-span-filestyle input-group-btn" tabindex="0"><label for="filestyle-0"
+                                class="btn btn-default "><span
+                                    class="icon-span-filestyle glyphicon glyphicon-folder-open"></span> <span
+                                    class="buttonText">Seleccionar archivo</span></label></span></div>
+                </div>
+                <span class="col-md-3 form-control-comment">
+                    opcional*
+                </span>
+            </div>
+
+
+
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea name="mensaje" id="mensaje" placeholder="¿Cómo podemos ayudarle?" maxlength="300"></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+
+        <script src="scripts.js"></script>
+
+        <footer>
+            <section id="acerca_de">
+                <article>
+                    <hgroup>
+                        <h3>Acerca de...</h3>
+                    </hgroup>
+                    <p>Nam scelerisque felis sapien, non dapibus ante posuere egestas. Nam a venenatis justo. Vestibulum
+                        venenatis leo turpis, nec lobortis lacus lobortis id. Praesent nec pharetra lorem, ac porttitor
+                        ex. Aenean turpis urna, convallis eget congue sed, onvallis at justo.</p>
+                </article>
+
+            </section>
+
+            <section id="redes">
+                <a href="#" class="facebook">
+                    <div class="icon">
+                        <img src="../WEB/imágenes/Icons/FACEBOOK.png">
+                    </div>
+                    <div class="text">Facebook</div>
+                </a>
+
+                <a href="#" class="instagram">
+                    <div class="icon">
+                        <img src="../WEB/imágenes/Icons/INSTAGRAM.png">
+                    </div>
+                    <div class="text">Instagram</div>
+                </a>
+
+                <a href="#" class="twitter">
+                    <div class="icon">
+                        <img src="../WEB/imágenes/Icons/TWITTERT.png">
+                    </div>
+                    <div class="text">Twitter</div>
+                </a>
+
+                <a href="#" class="youtube">
+                    <div class="icon">
+                        <img src="../WEB/imágenes/Icons/YOUTUBE.png">
+                    </div>
+                    <div class="text">YouTube</div>
+                </a>
+            </section>
+        </footer>
+
+        <div id="copyright">
+            <p>© AntxonMari Katxoburro Boinaetxea 2020</p>
+        </div>
+    </section>
+</body>
+
+</html>

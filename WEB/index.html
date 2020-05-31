@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="./imágenes/20146_1126658344957_3146194_n.jpg">
     <link rel="stylesheet" href="../WEB/css/style.css">
-    <title>AntxonMari Katxoburro Boinaetxea</title>
+    <title>Webería de Katxoburro</title>
 </head>
 
 <body>
@@ -14,14 +14,14 @@
     <header>
         <div id="subheader">
             <div id="logotipo">
-                <p><a href="#">Katxoburro</a></p>
+                <p><a href="file:///C:/Users/esteb/Desktop/PROYECTOS/Curso_CSS/WEB/index.html">Katxoburro</a></p>
             </div>
 
             <nav>
                 <ul>
-                    <li><a href="#">Inicio</a></li>
+                    <li><a href="../WEB/index.html">Inicio</a></li>
                     <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="../WEB/contacto.html">Contacto</a></li>
                 </ul>
             </nav>
         </div>
@@ -29,17 +29,51 @@
 
     <section id="wrap">
         <section id="main">
-            <section id="slideshow">
-                <img src="../WEB/imágenes/slideshow/01.jpg">
-                <!-- <img src="../WEB/imágenes/slideshow/02.jpg">
-                <img src="../WEB/imágenes/slideshow/03.jpg">
-                <img src="../WEB/imágenes/slideshow/04.jpg">
-                <img src="../WEB/imágenes/slideshow/05.jpg"> -->
-            </section>
+            <div class="slideshow">
+                <div class="container-all">
+
+                    <input type="radio" id="1" name="image-slide" hidden />
+                    <input type="radio" id="2" name="image-slide" hidden />
+                    <input type="radio" id="3" name="image-slide" hidden />
+
+                    <div class="slide">
+
+                        <div class="item-slide">
+                            <img src="../WEB/imágenes/slideshow/01.jpg">
+                        </div>
+
+                        <div class="item-slide">
+                            <img src="../WEB/imágenes/slideshow/02.jpg">
+                        </div>
+
+                        <div class="item-slide">
+                            <img src="../WEB/imágenes/slideshow/03.jpg">
+                        </div>
+
+                    </div>
+
+                    <div class="pagination">
+
+                        <label class="pagination-item" for="1">
+                            <img src="../WEB/imágenes/slideshow/01.jpg">
+                        </label>
+
+                        <label class="pagination-item" for="2">
+                            <img src="../WEB/imágenes/slideshow/02.jpg">
+                        </label>
+
+                        <label class="pagination-item" for="3">
+                            <img src="../WEB/imágenes/slideshow/03.jpg">
+                        </label>
+
+                    </div>
+
+                </div>
+            </div>
             <section id="bienvenidos">
                 <article>
                     <hgroup>
-                        <h3>Bienvenido a mi Webería.</h3>
+                        <h3>Bienvenido a ninguna parte.</h3>
                     </hgroup>
 
                     <p>
@@ -55,7 +89,7 @@
 
 
             </section>
- 
+
             <section id="contenido">
                 <article>
                     <hgroup>
