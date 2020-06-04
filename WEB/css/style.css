@@ -43,7 +43,7 @@ header {
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6db3f2', endColorstr='#1e69de', GradientType=1);
     /* IE6-9 fallback on horizontal gradient */
-    box-shadow: 0 3px 5px #000000;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 #subheader {
@@ -346,6 +346,205 @@ aside .widget img {
     height: 150px;
 }
 
+/* FORM CONTACTO */
+
+form {
+    width: 56%;
+    float: left;
+    padding: 30px;
+    margin: 20px 0 0 10px;
+    top: 100px;
+    background: rgb(30, 105, 222);
+    background: -moz-linear-gradient(-45deg, rgba(30, 105, 222, 1) 0%, rgba(84, 163, 238, 1) 31%, rgba(54, 144, 240, 1) 39%, rgba(54, 144, 240, 1) 57%, rgba(109, 179, 242, 1) 65%, rgba(109, 179, 242, 1) 83%, rgba(109, 179, 242, 1) 100%);
+    background: -webkit-linear-gradient(-45deg, rgba(30, 105, 222, 1) 0%, rgba(84, 163, 238, 1) 31%, rgba(54, 144, 240, 1) 39%, rgba(54, 144, 240, 1) 57%, rgba(109, 179, 242, 1) 65%, rgba(109, 179, 242, 1) 83%, rgba(109, 179, 242, 1) 100%);
+    background: linear-gradient(135deg, rgba(30, 105, 222, 1) 0%, rgba(84, 163, 238, 1) 31%, rgba(54, 144, 240, 1) 39%, rgba(54, 144, 240, 1) 57%, rgba(109, 179, 242, 1) 65%, rgba(109, 179, 242, 1) 83%, rgba(109, 179, 242, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e69de', endColorstr='#6db3f2', GradientType=1);
+    box-shadow: 0 3px 5px #000000;
+    border-radius: 10px;
+    position: relative;
+
+}
+
+label {
+    font-size: 15px;
+    display: block;
+    width: 100%;
+    color: #ffffff;
+    font-family: sourcesans;
+}
+
+textarea {
+    resize: vertical;
+    max-height: 250px;
+    min-height: 80px;
+}
+
+::placeholder {
+    color: rgb(0, 0, 0, 0.2);
+}
+
+
+
+input,
+textarea,
+select {
+    margin: 0 0 20px 0;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+    font-size: 15px;
+}
+
+input:focus,
+textarea:focus {
+    border: 2px solid #1668C4;
+}
+
+input[type="submit"] {
+    margin: 0 0 0 62px;
+    background-color: #1668C4;
+    border: none;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: sourcesans;
+    width: 163px;
+}
+
+input[type="submit"]:disabled {
+    opacity: 0.3;
+    cursor: not-allowed !important;
+    background-color: #4a88f4;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #4a88f4;
+}
+
+.form-control {
+    width: 250px;
+    cursor: not-allowed;
+}
+
+.col-md-6 {
+    display: inline-block;
+}
+
+.addFileBox .col-md-6 .inputGroup {
+    display: flex;
+    align-items: baseline;
+}
+
+.buttonText {
+    padding: 10px;
+    background-color: #1668C4;
+    border: none;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: sourcesans;
+    margin: 0 15px;
+}
+
+.buttonText:hover {
+    cursor: pointer;
+    background-color: #4a88f4;
+}
+
+.comment {
+    font-family: sourcesans;
+    margin: 0 -15px;
+    font-size: 12px;
+}
+
+.acepto {
+    display: flex;
+    align-items: baseline;
+    color: #ffffff;
+    font-family: sourcesans;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    margin: 0 5px 0px 0px;
+}
+
+/* DATOS DE CONTACTO */
+
+.contactBox {
+    width: 30%;
+    float: left;
+    padding: 30px;
+    margin: 20px 0 0 0;
+    top: 100px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#6db3f2+0,6db3f2+21,3690f0+39,3690f0+51,54a3ee+65,1e69de+100 */
+    background: rgb(109, 179, 242);
+    /* Old browsers */
+    background: -moz-linear-gradient(45deg, rgba(109, 179, 242, 1) 0%, rgba(109, 179, 242, 1) 21%, rgba(54, 144, 240, 1) 39%, rgba(54, 144, 240, 1) 51%, rgba(84, 163, 238, 1) 65%, rgba(30, 105, 222, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, rgba(109, 179, 242, 1) 0%, rgba(109, 179, 242, 1) 21%, rgba(54, 144, 240, 1) 39%, rgba(54, 144, 240, 1) 51%, rgba(84, 163, 238, 1) 65%, rgba(30, 105, 222, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, rgba(109, 179, 242, 1) 0%, rgba(109, 179, 242, 1) 21%, rgba(54, 144, 240, 1) 39%, rgba(54, 144, 240, 1) 51%, rgba(84, 163, 238, 1) 65%, rgba(30, 105, 222, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6db3f2', endColorstr='#1e69de', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    box-shadow: 0 3px 5px #000000;
+    border-radius: 10px;
+    position: relative;
+}
+
+.block img {
+    width: 25px;
+}
+
+.contact-rich h4 {
+    font-family: sourcesans;
+    font-size: 26px;
+    color: #ffffff;
+    margin: 0 0 25px 0;
+}
+
+.contact-rich .block {
+    font-size: 15px;
+    color: #ffffff;
+    display: flex;
+    align-items: flex-start;
+    margin: 0 0 5px 0;
+}
+
+.contactBox .contact-rich .block .data h6 {
+    margin: 0 0 10px 0;
+    color: #000000;
+}
+
+.data {
+    margin: 0 0 0 20px;
+    font-family: sourcesans;
+}
+
+hr {
+    margin: 23px;
+}
+
+/* --- LOPD --- */
+
+.lopd {
+    top: 140px;
+    width: 900px;
+    background-color: blanchedalmond;
+    float: left;
+    position: relative;
+    margin: 20px 0;
+    padding: 30px;
+    text-align: justify;
+    background: -moz-linear-gradient(45deg, rgba(247, 189, 196, 1) 15%, rgba(230, 56, 76, 1) 37%, rgba(204, 22, 43, 1) 68%, rgba(246, 138, 151, 1) 89%);
+    background: -webkit-linear-gradient(45deg, rgba(247, 189, 196, 1) 15%, rgba(230, 56, 76, 1) 37%, rgba(204, 22, 43, 1) 68%, rgba(246, 138, 151, 1) 89%);
+    background: linear-gradient(45deg, rgba(247, 189, 196, 1) 15%, rgba(230, 56, 76, 1) 37%, rgba(204, 22, 43, 1) 68%, rgba(246, 138, 151, 1) 89%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f7bdc4', endColorstr='#f68a97', GradientType=1);
+    box-shadow: 0 3px 5px #000000;
+    border-radius: 10px;
+}
+
 /* --- FOOTER --- */
 
 footer {
@@ -353,7 +552,7 @@ footer {
     float: left;
     clear: both;
     position: relative;
-    top: 150px;
+    top: 220px;
     box-shadow: 0 2px 2px #000000;
     border-radius: 5px;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#676767+0,6f6f6f+12,777777+26,777777+26,646464+29,535353+50,424242+64,373737+67,373737+67,424242+76,525252+83,494949+91,434343+100 */
@@ -448,7 +647,7 @@ a .text {
 #copyright {
     float: left;
     width: 100%;
-    margin: -50px 0 300px 0;
+    margin: 50px 0 300px 0;
     position: relative;
     top: 230px;
 }
@@ -458,104 +657,4 @@ a .text {
     font-size: 12px;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-/* FORM CONTACTO */
-
-form {
-    width: 60%;
-    float: left;
-    padding: 20px;
-    top: 100px;
-        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#6db3f2+0,6db3f2+21,3690f0+39,3690f0+51,54a3ee+65,1e69de+100 */
-        background: rgb(109, 179, 242);
-        /* Old browsers */
-        background: -moz-linear-gradient(45deg, rgba(109, 179, 242, 1) 0%, rgba(109, 179, 242, 1) 21%, rgba(54, 144, 240, 1) 39%, rgba(54, 144, 240, 1) 51%, rgba(84, 163, 238, 1) 65%, rgba(30, 105, 222, 1) 100%);
-        /* FF3.6-15 */
-        background: -webkit-linear-gradient(45deg, rgba(109, 179, 242, 1) 0%, rgba(109, 179, 242, 1) 21%, rgba(54, 144, 240, 1) 39%, rgba(54, 144, 240, 1) 51%, rgba(84, 163, 238, 1) 65%, rgba(30, 105, 222, 1) 100%);
-        /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(45deg, rgba(109, 179, 242, 1) 0%, rgba(109, 179, 242, 1) 21%, rgba(54, 144, 240, 1) 39%, rgba(54, 144, 240, 1) 51%, rgba(84, 163, 238, 1) 65%, rgba(30, 105, 222, 1) 100%);
-        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6db3f2', endColorstr='#1e69de', GradientType=1);
-        /* IE6-9 fallback on horizontal gradient */
-        box-shadow: 0 3px 5px #000000;
-    border-radius: 10px;
-    position: relative;
-    
-}
-
-label {
-    font-size: 15px;
-    display: block;
-    width: 100%;
-    color: #ffffff;
-    font-weight: 700;
-    letter-spacing: 3px;
-}
-
-textarea {
-    resize: vertical;
-    max-height: 250px;
-    min-height: 80px;
-}
-
-::placeholder {
-    color: rgb(0, 0, 0, 0.2);
-}
-
-input,
-textarea {
-    margin: 0 0 20px 0;
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 1px solid #cccccc;
-    font-size: 15px;
-}
-
-input:focus,
-textarea:focus {
-    border: 2px solid #1668C4;
-}
-
-input[type="submit"] {
-    margin-bottom: 0;
-    background-color: #1668C4;
-    border: none;
-    color: #ffffff;
-    font-weight: 700;
-    letter-spacing: 3px;
-}
-
-input[type="submit"]:hover {
-    cursor: pointer;
-    background-color: #4a88f4;
-}
-
-.form-control {
-    width: 250px;
-}
-
-.col-md-6 {
-    display: inline-block;
-}
-
-.addFileBox .col-md-6 .inputGroup {
-    display: flex;
-    align-items: baseline;
-}
-
-.buttonText {
-    padding: 10px;
-    background-color: #1668C4;
-    border: none;
-    color: #ffffff;
-    font-weight: 700;
-    letter-spacing: 3px;
-    margin: 0 15px;
-}
-
-.buttonText:hover {
-    cursor: pointer;
-    background-color: #4a88f4;
 }
