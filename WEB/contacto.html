@@ -19,7 +19,7 @@
 
             <nav>
                 <ul>
-                    <li><a href="#">Inicio</a></li>
+                    <li><a href="../WEB/index.html">Inicio</a></li>
                     <li><a href="#">Blog</a></li>
                     <!-- <li><a href="#">Contacto</a></li> -->
                 </ul>
@@ -28,69 +28,108 @@
     </header>
 
     <section id="wrap">
-        <!--         <div id="contactBox" class="contactBox">
-
+        <div id="contactBox" class="contactBox">
             <div class="contact-rich">
-                <h4>Nuestra tienda</h4>
+                <h4>Datos de contacto:</h4>
                 <div class="block">
-                    <div class="icon"><i class="material-icons"></i></div>
-                    <div class="data">Castellano Bros SL<br>C/Príncipe de Vergara, 27<br>28001
-                        Madrid<br>Madrid<br>España</div>
-                </div>
-                <hr>
-                <div class="block">
-                    <div class="icon"><i class="material-icons"></i></div>
+                    <img src="../WEB/imágenes/Icons/location01.png">
                     <div class="data">
-                        Tel:<br>
-                        <a href="tel:+34 648 83 36 58">+34 648 83 36 58</a>
+                        <h6>Dirección:</h6>
+                        Katxoburro Inc.<br>C/ Donde Cristo perdió la boina, 27<br>20666 -
+                        Ikaztegieta<br>Guipúzcoa<br>Spain
                     </div>
                 </div>
                 <hr>
                 <div class="block">
-                    <div class="icon"><i class="material-icons"></i></div>
-                    <div class="data email">
-                        Email:<br>
+                    <img src="../WEB/imágenes/Icons/telef01.png">
+                    <div class="data">
+                        <h6>Teléfonos:</h6>
+                        <a href="tel:+34 943 00 00 00">+34 943 00 00 00</a><br>
+                        <a href="tel:+34 666 00 00 00">+34 666 00 00 00</a>
                     </div>
-                    <a href="mailto:ventas@castellanolg.com">ventas@castellanolg.com</a>
+                </div>
+                <hr>
+                <div class="block">
+                    <img src="../WEB/imágenes/Icons/mail01.png" alt="">
+                    <div class="data">
+                        <h6>Correo electrónico:</h6>
+                        <a href="katxoburro.boinaetxea@gmail.com">katxoburro.boinaetxea@gmail.com</a>
+                    </div>
                 </div>
             </div>
 
         </div>
- -->
-        <form onsubmit='return enviarDatos(this)'>
+
+        <form>
             <label for="asunto">Asunto:</label>
-            <input type="text" name="asunto" id="asunto" placeholder="Asunto:" required>
+            <select name="asunto">
+                <option value="1">Comercial y ventas</option>
+                <option value="2">Facturación</option>
+                <option value="3">Reclamaciones</option>
+                <option value="10">Atención al Cliente</option>
+                <option value="11">Sugerencias</option>
+                <option value="12">Otras hostias</option>
+            </select>
 
             <label for="email">Correo electrónico:</label>
             <input type="text" name="email" id="email" placeholder="su@correo.com:" required>
 
-
             <div class="addFileBox">
-                <label class="labelFile">Archivo adjunto</label>
+                <label class="labelFile">Archivo adjunto:</label>
+
                 <div class="col-md-6">
-                    <input type="file" name="fileUpload" class="filestyle" data-buttontext="Seleccionar archivo"
+                    <input type="file" name="fileUpload" class="filestyle" data-buttontext="Seleccionar archivo ▲"
                         id="filestyle-0" tabindex="-1" style="position: absolute; clip: rect(0px, 0px, 0px, 0px);">
-                    <div class="inputGroup"><input type="text" class="form-control " placeholder="" disabled=""> <span
-                            class="group-span-filestyle input-group-btn" tabindex="0"><label for="filestyle-0"
-                                class="btn btn-default "><span
-                                    class="icon-span-filestyle glyphicon glyphicon-folder-open"></span> <span
-                                    class="buttonText">Seleccionar archivo</span></label></span></div>
+                    <div class="inputGroup">
+                        <input type="text" class="form-control " placeholder="" disabled="">
+                        <span class="group-span-filestyle input-group-btn" tabindex="0">
+                            <label for="filestyle-0" class="btn btn-default ">
+                                <span class="icon-span-filestyle glyphicon glyphicon-folder-open">
+
+                                </span>
+                                <span class="buttonText">Seleccionar archivo ▲</span>
+                            </label>
+                        </span>
+                    </div>
                 </div>
-                <span class="col-md-3 form-control-comment">
-                    opcional*
-                </span>
+
+                <span class="comment">opcional*</span>
             </div>
-
-
-
 
             <label for="mensaje">Mensaje:</label>
             <textarea name="mensaje" id="mensaje" placeholder="¿Cómo podemos ayudarle?" maxlength="300"></textarea>
 
-            <input type="submit" value="Enviar">
+            <div class="acepto">
+                <input type="checkbox" name="agree" id="agree" onChange="comprobar(this);">
+                <p>Acepto las condiciones de uso y privacidad.</p>
+                <input type="submit" id="enviar" disabled value="Enviar ►►►">
+            </div>
         </form>
 
-        <script src="scripts.js"></script>
+        <div class="lopd">
+            <h2>PROTECCIÓN DE DATOS</h2><br>
+            <p>De conformidad con lo establecido en el Art. 5 de la Ley Orgánica 15/1999 de diciembre de Protección de
+                Datos de Carácter Personal, por el que se regula el derecho de información en la recogida de datos le
+                informamos de los siguientes extremos:
+                <br><br>
+                ◘ Los datos de carácter personal que nos ha suministrado en esta y otras comunicaciones mantenidas con
+                usted serán objeto de tratamiento en los ficheros responsabilidad de Katxoburro Inc.
+                <br><br>
+                ◘ La finalidad del tratamiento es la de gestionar de forma adecuada la prestación del servicio que nos
+                ha requerido. Asimismo estos datos no serán cedidos a terceros, salvo las cesiones legalmente
+                permitidas.
+                <br><br>
+                ◘ Los datos solicitados a través de esta y otras comunicaciones son de suministro obligatorio para la
+                prestación del servicio. Estos son adecuados, pertinentes y no excesivos.
+                <br><br>
+                ◘ Su negativa a suministrar los datos solicitados implica la imposibilidad prestarle el servicio.
+                <br><br>
+                ◘ Asimismo, le informamos de la posibilidad de ejercitar los correspondiente derechos de acceso,
+                rectificación, cancelación y oposición de conformidad con lo establecido en la Ley 15/1999 ante
+                Katxoburro Inc. como responsables del fichero. Los derechos mencionados los puede ejercitar a través de
+                los siguientes medios: katxoburro.boinaetxea@gmail.com, Katxoburro Inc. C/ Donde Cristo perdió la boina,
+                27 20666 - Ikaztegieta, Guipúzcoa. Teléfonos: +34 943 00 00 00 y +34 666 00 00 00</p>
+        </div>
 
         <footer>
             <section id="acerca_de">
@@ -102,7 +141,6 @@
                         venenatis leo turpis, nec lobortis lacus lobortis id. Praesent nec pharetra lorem, ac porttitor
                         ex. Aenean turpis urna, convallis eget congue sed, onvallis at justo.</p>
                 </article>
-
             </section>
 
             <section id="redes">
@@ -137,9 +175,11 @@
         </footer>
 
         <div id="copyright">
-            <p>© AntxonMari Katxoburro Boinaetxea 2020</p>
+            <p>AntxonMari Katxoburro Boinaetxea © 2020</p>
         </div>
     </section>
+
+    <script src="../WEB/js/scripts.js"></script>
 </body>
 
 </html>
