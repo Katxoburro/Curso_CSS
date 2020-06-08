@@ -50,6 +50,8 @@ header {
     width: 960px;
     /*100% del «grid».*/
     margin: auto;
+    display: flex;
+    align-items: flex-end;
 }
 
 #logotipo {
@@ -57,12 +59,21 @@ header {
     width: 300px;
     /*calculado con un «grid».*/
     padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+#logotipo > img {
+    width: 100px;
+    float: left;
+    padding: 10px 0;
 }
 
 #logotipo a {
     font-family: sourcesans;
     font-size: 50px;
     color: #000000;
+    margin: 0 0 0 10px;
 }
 
 /* --- MENÚ --- */
@@ -348,7 +359,7 @@ aside .widget img {
 
 /* FORM CONTACTO */
 
-form {
+#wrap .contacto {
     width: 56%;
     float: left;
     padding: 30px;
@@ -388,7 +399,7 @@ textarea {
 input,
 textarea,
 select {
-    margin: 0 0 20px 0;
+    margin: 0 0 22px 0;
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
@@ -462,6 +473,7 @@ input[type="submit"]:hover {
     align-items: baseline;
     color: #ffffff;
     font-family: sourcesans;
+    margin: 0 0 -6px 0;
 }
 
 input[type="checkbox"] {
@@ -543,6 +555,108 @@ hr {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f7bdc4', endColorstr='#f68a97', GradientType=1);
     box-shadow: 0 3px 5px #000000;
     border-radius: 10px;
+}
+
+/* --- LISTADO DINÁMICO --- */
+
+.wrap1 {
+	margin: auto;
+	max-width: 800px;
+	width: 90%;
+}
+
+.principal {
+	background: #F44336;
+	border-top: 20px solid #D32F2F;
+	color: #fff;
+	padding: 50px 0;
+    width: 100%;
+    position: relative;
+    top: 120px;
+    box-shadow: 0 3px 5px #000000;
+    border-radius: 10px;
+    font-family: sourcesans;
+    float: left;
+}
+
+.principal .wrap1 .formulario {
+	color: #212121;
+    text-align: center;
+    background: rgb(30, 105, 222);
+    background: -moz-linear-gradient(-45deg, rgba(30, 105, 222, 1) 0%, rgba(84, 163, 238, 1) 31%, rgba(54, 144, 240, 1) 39%, rgba(54, 144, 240, 1) 57%, rgba(109, 179, 242, 1) 65%, rgba(109, 179, 242, 1) 83%, rgba(109, 179, 242, 1) 100%);
+    background: -webkit-linear-gradient(-45deg, rgba(30, 105, 222, 1) 0%, rgba(84, 163, 238, 1) 31%, rgba(54, 144, 240, 1) 39%, rgba(54, 144, 240, 1) 57%, rgba(109, 179, 242, 1) 65%, rgba(109, 179, 242, 1) 83%, rgba(109, 179, 242, 1) 100%);
+    background: linear-gradient(135deg, rgba(30, 105, 222, 1) 0%, rgba(84, 163, 238, 1) 31%, rgba(54, 144, 240, 1) 39%, rgba(54, 144, 240, 1) 57%, rgba(109, 179, 242, 1) 65%, rgba(109, 179, 242, 1) 83%, rgba(109, 179, 242, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e69de', endColorstr='#6db3f2', GradientType=1);
+    box-shadow: 0 3px 5px #000000;
+    border-radius: 10px;
+    padding: 30px 30px 5px 30px;
+    position: relative;
+    top: -30px;
+}
+
+.principal .formulario input[type=text] {
+	margin-bottom: 20px;
+	padding: 10px;
+    width: 100%;
+    color: #000000;
+}
+
+.principal .formulario input[type=text].error {
+	border: 2px solid #D32F2F;
+    color: #ff0000;
+    font-family: sourcesans;
+}
+
+.principal .formulario .boton {
+    padding: 10px;
+    background-color: #1668C4;
+    border: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: sourcesans;
+    width: 200px;
+}
+
+.principal .formulario .boton:hover {
+    cursor: pointer;
+    background-color: #4a88f4;
+}
+
+/* - Tareas - */
+.tareas .lista {
+	list-style: none;
+}
+
+.tareas .lista li {
+	border-bottom: 1px solid #B6B6B6;
+}
+
+.tareas .lista li a {
+	color: #212121;
+	display: block;
+	padding: 20px 0;
+    text-decoration: none;
+    text-align: justify;
+}
+
+.tareas .lista li a:hover {
+	text-decoration: line-through;
+}
+
+.tareas .lista li a .usuario {
+    display: flex;
+}
+
+.tareas .lista li a .wrapFecha {
+    display: flex;
+    justify-content: space-between;
+    color: #FFFFFE;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.tareas .lista li a .usuario p {
+    margin: 0 0 0 2px;
 }
 
 /* --- FOOTER --- */
@@ -658,3 +772,4 @@ a .text {
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+

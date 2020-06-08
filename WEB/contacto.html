@@ -14,13 +14,14 @@
     <header>
         <div id="subheader">
             <div id="logotipo">
+                <img src="../WEB/imágenes/KXB.png" alt="logo">
                 <p><a href="file:///C:/Users/esteb/Desktop/PROYECTOS/Curso_CSS/WEB/index.html">Katxoburro</a></p>
             </div>
 
             <nav>
                 <ul>
                     <li><a href="../WEB/index.html">Inicio</a></li>
-                    <li><a href="#">Blog</a></li>
+                    <li><a href="../WEB/blog.html">Blog</a></li>
                     <!-- <li><a href="#">Contacto</a></li> -->
                 </ul>
             </nav>
@@ -60,7 +61,7 @@
 
         </div>
 
-        <form>
+        <form class="contacto">
             <label for="asunto">Asunto:</label>
             <select name="asunto">
                 <option value="1">Comercial y ventas</option>
@@ -72,14 +73,14 @@
             </select>
 
             <label for="email">Correo electrónico:</label>
-            <input type="text" name="email" id="email" placeholder="su@correo.com:" required>
+            <input type="text" name="email" id="email" placeholder="su@correo.com:" required onblur="pruebaemail(email.value);">
 
             <div class="addFileBox">
                 <label class="labelFile">Archivo adjunto:</label>
 
                 <div class="col-md-6">
                     <input type="file" name="fileUpload" class="filestyle" data-buttontext="Seleccionar archivo ▲"
-                        id="filestyle-0" tabindex="-1" style="position: absolute; clip: rect(0px, 0px, 0px, 0px);">
+                        id="filestyle-0" tabindex="-1" style="position: absolute; clip: rect(0px, 0px, 0px, 0px);" onchange="fileDetected(event)">
                     <div class="inputGroup">
                         <input type="text" class="form-control " placeholder="" disabled="">
                         <span class="group-span-filestyle input-group-btn" tabindex="0">
