@@ -1,9 +1,15 @@
+
+
+// ACTIVA O DESACTIVA EL BOTÓN ENVIAR, SI UN CHECK ESTÁ ACTIVADO.
+
 function comprobar(obj) {
 	if (obj.checked)
 		document.getElementById('enviar').disabled = false;
 	else
 		document.getElementById('enviar').disabled = true;
 }
+
+// COMPRUEBA SI EL FORMATO DE CORREO ES CORRECTO.
 
 function pruebaemail(valor) {
 	re = /^([\da-z_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
@@ -28,6 +34,9 @@ function fileDetected(ev) {
 
 /* LISTA DINÁMICA */
 
+var usuarioInput = document.getElementById('usuarioInput');
+var usuarioDice = document.getElementById('dice');
+
 var lista = document.getElementById('lista'),
 	tareaInput = document.getElementById('tareaInput'),
 	btnNuevaTarea = document.getElementById('btnAgregar');
@@ -40,9 +49,20 @@ var agregarTarea = function name() {
 		enlace = document.createElement('a'),
 		contenido = document.createTextNode(tarea);
 
+	var nuevoUsuario = usuarioInput.value;
+	var usuarioBox = document.createElement('div');
+	var usuarioText = document.createTextNode(nuevoUsuario);
+	
+
 	if (tarea === '') {
 		tareaInput.setAttribute('placeholder', 'Escribe algo, alma de cántaro...');
 		tareaInput.className = 'error';
+		return false;
+	}
+
+	if (nuevoUsuario === '') {
+		usuarioInput.setAttribute('placeholder', 'Que no tienes nombre ¿o qué?...');
+		usuarioInput.className = 'error';
 		return false;
 	}
 
@@ -55,7 +75,9 @@ var agregarTarea = function name() {
 	// Agregamos la nueva tarea a la lista
 	lista.appendChild(nuevaTarea);
 	// Limpia el campo después de la ejecución
+	usuarioInput.value = '';
 	tareaInput.value = '';
+
 
 	for (var i = 0; i <= lista.children.length - 1; i++) {
 		lista.children[i].addEventListener('click', function () {
@@ -64,12 +86,17 @@ var agregarTarea = function name() {
 	}
 }
 
-var comprobarInput = function name(params) {
-	tareaInput.className = '';
-	tareaInput.setAttribute('placeholder', 'Agrega tu comentario...')
+var comprobarInputUsuario = function name() {
+	usuarioInput.className = '';
+	usuarioInput.setAttribute('placeholder', 'Ingresa tu nombre, «nickname» o mote del pueblo...');
 }
 
-var eliminarTarea = function name(params) {
+var comprobarInput = function name() {
+	tareaInput.className = '';
+	tareaInput.setAttribute('placeholder', 'Agrega tu comentario...');
+}
+
+var eliminarTarea = function name() {
 
 }
 
@@ -78,10 +105,11 @@ var eliminarTarea = function name(params) {
 btnNuevaTarea.addEventListener('click', agregarTarea);
 
 //Comprobar «input»
+usuarioInput.addEventListener('click', comprobarInputUsuario);
 tareaInput.addEventListener('click', comprobarInput);
 
 // Borrando elementos de la lista
+
 for (var i = 0; i < lista.children.length - 1; i++) {
 	lista.children[i].addEventListener('click', eliminarTarea);
-
 }

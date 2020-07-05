@@ -1,3 +1,5 @@
+
+
 var tipoHorario = 12;
 var cambioIdiomaDefault = 'ES';
 
@@ -141,9 +143,6 @@ function cambioIdioma() {
 
     actualizarHora12();
 };
-
-
-
 
 function enviarDatos(form) {
     var data = JSON.stringify( $(form).serializeArray() );

@@ -394,8 +394,6 @@ textarea {
     color: rgb(0, 0, 0, 0.2);
 }
 
-
-
 input,
 textarea,
 select {
@@ -481,6 +479,10 @@ input[type="checkbox"] {
     margin: 0 5px 0px 0px;
 }
 
+input[type="checkbox"]:checked {
+    box-shadow: 0 0 10px 1px burlywood;
+}
+
 /* DATOS DE CONTACTO */
 
 .contactBox {
@@ -557,6 +559,18 @@ hr {
     border-radius: 10px;
 }
 
+.lopd h2 {
+    font-family: sourcesans;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.lopd p {
+    font-family: sourcesans;
+    font-size: 16px;
+    color: #000000; 
+}
+
 /* --- LISTADO DINÁMICO --- */
 
 .wrap1 {
@@ -602,9 +616,12 @@ hr {
 }
 
 .principal .formulario input[type=text].error {
-	border: 2px solid #D32F2F;
-    color: #ff0000;
+    border: 2px solid #D32F2F;
     font-family: sourcesans;
+}
+
+.principal .formulario input[type=text].error::placeholder {
+    color: #ff0000;
 }
 
 .principal .formulario .boton {
@@ -628,35 +645,41 @@ hr {
 }
 
 .tareas .lista li {
-	border-bottom: 1px solid #B6B6B6;
+    border-bottom: 1px solid #B6B6B6;
+    margin: 20px 0 0 0;
 }
 
-.tareas .lista li a {
-	color: #212121;
-	display: block;
-	padding: 20px 0;
-    text-decoration: none;
-    text-align: justify;
+.content {
+    color: black;
+    text-align: justify; 
 }
 
-.tareas .lista li a:hover {
-	text-decoration: line-through;
-}
-
-.tareas .lista li a .usuario {
-    display: flex;
-}
-
-.tareas .lista li a .wrapFecha {
+.wrapFecha {
     display: flex;
     justify-content: space-between;
-    color: #FFFFFE;
-    font-size: 12px;
-    font-weight: bold;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0px 0 5px 0;
 }
 
-.tareas .lista li a .usuario p {
-    margin: 0 0 0 2px;
+.deleteBox {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.deleteBox .delete {
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #1668C4;
+    border: none;
+    color: #ffffff;
+}
+
+.deleteBox .delete:hover {
+    background-color: #4a88f4;
 }
 
 /* --- FOOTER --- */
